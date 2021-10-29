@@ -1,0 +1,214 @@
+.header {
+  position: sticky;
+  color: $mainColor1;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 48px 0;
+  transition: $transition1;
+  background: white;
+}
+.header__inner {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+
+.header__logo  {
+     position: relative;
+     z-index: 20;
+  }
+
+.header.fixed {
+  position: fixed;
+  padding: 5px 0;
+  background-color: $whiteColor;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.36);
+  transition: $transition1;
+}
+.header__ad-block {
+  display: none;
+}
+.header__second-menu-block, .header__main-menu-block, .right-block__tel {
+  display: none;
+}
+.right-block__counter {
+  font-weight: bold;
+  color: $mainColor1;
+  display: inline-block;
+  font-size: 12px;
+  &--select {
+    transform: translate(-16px,1px);
+  }
+  &--basket {
+    transform: translate(-15px,4px);
+  }
+}
+.right-block__btn {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.right-block__btn svg {
+  margin: 0 auto;
+}
+.right-block__btn-block {
+  display: flex;
+    justify-content: space-between;
+    width: 130px;
+    align-items: center;
+}
+.tel {
+  position: relative;
+  margin-left: 30px;
+  &::before {
+    content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: -30px;
+      width: 21px;
+      height: 22px;
+      background: url(../img/icons/tel.png) center no-repeat;
+  }
+}
+.header--main {
+  position: fixed;
+}
+
+.header__ad-block {
+  border-bottom: 1px solid $mainColor3;
+  padding: 12px;
+}
+.logo {
+  .logo__link {
+     display: flex;
+
+     &:hover {
+        transform: scale(1.05);
+     }
+  }
+}
+.second-list__item {
+  align-items: center;
+  display: flex;
+}
+.second-list svg {
+  transition: transform .25s,-webkit-transform .25s;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+  width: 16px;
+  height: 16px;
+  color: $mainColor2;
+  margin-left: 5px;
+}
+.main-list__link:hover {
+  color: $mainColor2;
+}
+.second-list__link:hover {
+  color: $mainColor1;
+}
+.right-block__text {
+  display: none;
+}
+
+
+@media screen and (min-width: 1832px) {
+  .second-list, .main-list {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .second-list__item a {
+    margin-left: 50px;
+    color: $mainColor2;
+  }
+  .header__menu-block {
+    margin-left: -25vw;
+    margin-top: -3vh;
+  }
+  .main-menu {
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+  .header__ad-block {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .submenu {
+    position: absolute;
+    top: 23px;
+    background: white;
+    line-height: 20px;
+    opacity: 0;
+  }
+  .main-list__item {
+    margin-right: 75px;
+  }
+  .second-list__link--address:hover > .submenu {
+    opacity: 1;
+  }
+  .header__inner {
+    padding: 25px 0;
+  }
+  .header__burger-menu {
+     display: none;
+  }
+  .menu__item {
+    padding: 0;
+  }
+  .header__ad-block, .header__main-menu-block, .header__second-menu-block, .right-block__tel {
+    display: block;
+  }
+  .main-list {
+    justify-content: flex-start;
+  }
+  .right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .right-block__btn-block {
+    width: 320px;
+  }
+  .right-block__btn {
+    display: flex;
+    flex-direction: column;
+    & svg {
+    width: 31px;
+    height: 31px;
+      overflow: visible;
+    }
+  }
+  .right-block__text {
+    display: block;
+  }
+  .right-block__tel {
+    transform: translateY(-18px);
+    &:hover {
+      font-weight: 700;
+    }
+  }
+  .right-block__btn svg:hover {
+    stroke: black;
+  }
+  .second-list__link--address {
+    position: relative;
+    margin-left: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: -30px;
+      width: 21px;
+      height: 22px;
+      background: url(../img/icons/marker-carta.png) center no-repeat;
+    }
+  }
+}
