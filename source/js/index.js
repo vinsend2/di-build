@@ -21,6 +21,7 @@ const switcherButton = () => {
   const button2 = document.querySelector("#Grid2");
   const button3 = document.querySelector("#Grid3");
   const button4 = document.querySelector("#Grid4");
+
   const grid2 = document.querySelector(".products-list");
   const img = document.querySelectorAll(".swiper-slide > img");
   const imgBlock = document.querySelectorAll(".swiper-slide");
@@ -28,12 +29,11 @@ const switcherButton = () => {
   const heart = document.querySelectorAll(".product-card__favorite");
   const swiper = document.querySelectorAll('.mySwiper');
   const wrapper = document.querySelectorAll('.swiper-wrapper');
-  const blockWidth = cardBlock[0].offsetHeight;
   const width = window.screen.availWidth;
 
 
-  console.log(width)
-  button1.onclick = function() {
+  button2.onclick = function() {
+    button1.querySelector("svg").style.fill = 'gray';
     grid2.style.gridTemplateColumns = 'repeat(1,100%)';
     img.forEach(el => {
       el.style.transform = 'scale(1)';
@@ -146,11 +146,13 @@ const switcherButton = () => {
     });
   };
 }
-  button2.onclick = function() {
+  button1.onclick = function() {
+    button1.querySelector("svg").style.fill = 'black';
     grid2.style.gridTemplateColumns = 'repeat(2,50%)';
     img.forEach(el => {
       el.style.transform = 'scale(1.2)';
     });
+
   };
 };
 
@@ -181,8 +183,20 @@ const searchOpen= () => {
      e.preventDefault();
       form.classList.remove('open');
     };
-
 };
+
+const addressOpen = () => {
+  const address = document.querySelectorAll('.second-list__link--address');
+  console.log(address)
+
+  address.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      el.preventDefault();
+      console.log(123);
+    })
+  });
+
+}
 
 const swiperPrew1 = () => {
   const swiper = document.querySelectorAll('.mySwiper');
@@ -268,6 +282,7 @@ document.addEventListener(
     burgerSubmenu();
     swiperPrew1();
     searchOpen();
+    addressOpen();
   },
   false
 );
