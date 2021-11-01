@@ -5,25 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Djaiv: New Automation Tool for Your Home</title>
+  <title>Джайв - интернет-магазин обуви в Челябинске</title>
   <meta name="description" content="Djaiv">
   <meta name="keyword" content="Djaiv">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#316099">
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
   />
   <meta name="apple-mobile-web-app-title" content="Djaiv">
   <meta name="application-name" content="Djaiv">
-  <meta name="msapplication-TileColor" content="#316099">
-  <meta name="theme-color" content="#316099">
+  <meta name="msapplication-TileColor" content="#8593a2">
+  <meta name="theme-color" content="#8593a2">
   <meta property="og:title" content="">
-  <meta property="og:description" content="New Automation Tool for Your Home">
+  <meta property="og:description" content="Джайв - интернет-магазин обуви в Челябинске">
   <meta property="og:url" content="">
   <style>
     .call--closed {
@@ -162,7 +160,7 @@
         <div class="header__second-menu-block">
           <nav class="second-menu">
             <ul class="second-menu__list second-list">
-              <li class="second-list__item">
+              <li class="second-list__item second-list__item--address">
                 <a class="second-list__link second-list__link--address" href="#">Адреса магазинов</a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
                   <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
@@ -185,13 +183,16 @@
               </li>
             </ul>
           </nav>
+
         </div>
         <div class="header__main-menu-block">
           <nav class="main-menu">
             <ul class="main-menu__list main-list">
+              <div>
               <li class="main-list__item">
                 <a class="main-list__link" href="#">Женская обувь</a>
               </li>
+            </div>
               <li class="main-list__item">
                 <a class="main-list__link" href="#">Мужская обувь</a>
               </li>
@@ -199,7 +200,70 @@
                 <a class="main-list__link" href="#">Распродажа</a>
               </li>
             </ul>
+            <div class="main-manu__submenu">
+              <div class="main-manu__submenu-block wrapper1800">
+                <div class="main-manu__submenu-top"></div>
+              <ul class="submenu__female">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Весна/Осень</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Лето</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Зима</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Туфли женские</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Кроссовки, кеды женские</a>
+                </li>
+              </ul>
+              <ul class="submenu__male">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Весна/Осень</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Лето</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Зима</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Туфли мужские</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Кроссовки мужские</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Мокасины мужские</a>
+                </li>
+              </ul>
+              <ul class="submenu__sale">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Боссоножки</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Кроссовки</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Туфли</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Весна/Осень</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Зимние</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Все предложения</a>
+                </li>
+              </ul>
+            </div>
+            </div>
           </nav>
+
         </div>
         </div>
         <div class="header_right-block right-block">
@@ -252,14 +316,60 @@
             </a>
           </div>
         </div>
+
+      </div>
+      <div class="catalog-block__filter filter filter--fixed">
+        <ul class="filter__list">
+          <li class="filter__item filter__item--catalog">
+            <button class="filter__link" href="#">Каталог</button>
+          </li>
+          <li class="filter__item filter__item--sort">
+            <button class="filter__link link" href="#">Отфильтровать/упорядочить</button>
+          </li>
+        </ul>
       </div>
     </div>
     </div>
+    <div class="sidebar sidebar_search search-form" id="search-form">
+      <header class="sidebar__header">
+          <form action="" method="GET" class="sidebar__header-extra search-form__form" id="search-bar">
+              <label class="input search-form__input">
+                  <svg role="img" viewBox="0 0 12.4 12.4" class="icon icon_search input__icon">
+                      <g transform="translate(-1270 -70)" fill="none" stroke="currentColor">
+                          <circle cx="1275" cy="75" r="4.5"></circle>
+                          <path d="M1278 78l4 4"></path>
+                      </g>
+                  </svg>
+  <input type="text" value="" placeholder="Введите название товара, артикул или бренд..." class="input__control tt-input" role="combobox">
 
+                   </label>
+              <div class="search-form__controls">
+                  <button class="link search-form__submit">
+                      <svg role="img" viewBox="0 0 15.2 9.9" class="icon icon_return link__icon">
+                          <g fill="none" stroke="currentColor">
+                              <path d="M4.7 1.5l-4 4 4 4"></path>
+                              <path d="M9.7.5h4c.6 0 1 .4 1 1v3c0 .6-.4 1-1 1H.7"></path>
+                          </g>
+                      </svg>
+                  </button>
+                  <button class="link search-form__reset">
+                      <svg role="img" viewBox="0 0 10.7 10.7" class="icon icon_close link__icon">
+                          <g fill="none" stroke="currentColor">
+                              <path d="M.4.4l10 10"></path>
+                              <path d="M10.4.4l-10 10"></path>
+                          </g>
+                      </svg>
+                  </button>
+
+              </div>
+          </form>
+      </header>
+
+  </div>
   </header>
 
   <main class="main-block catalog">
-    <div class="wrapper1800">
+    <div class="wrapper1800 wrapper1800--mobile">
       <h1 class="catalog__h1">Женская обувь</h1>
       <nav class="catalog__category category-menu">
         <ul class="category-menu__list category-list">
@@ -301,8 +411,6 @@
             <input type="radio" name="es-grid" class="es-grid-switcher radio es-grid-1" id="esGrid1" value="1" >
             <label for="esGrid1"></label>
           </span>
-
-
         </div>
         </div>
         <div class="catalog-block__filter filter">
@@ -314,33 +422,44 @@
               <button class="main-list__link" href="#">Отфильтровать/упорядочить</button>
             </li>
           </ul>
-        </div>
+          <div class="toolbar__switch toolbar-desktop">
+            <span class="toolbar__switch-title">Отображение:</span>
+            <span class="switcher-button" id="Grid3">
+            <input type="radio" name="es-grid" class="es-grid-switcher radio es-grid-3" id="esGrid3" value="2" checked="">
+            <label for="esGrid3"></label>
+          </span>
+          <span class="switcher-button" id="Grid4">
+          <input type="radio" name="es-grid" class="es-grid-switcher radio es-grid-4" id="esGrid4" value="4" >
+          <label for="esGrid4">
 
-        <div class="catalog-block__view view">
-          <span class="view__title">Отображение</span>
-          <span class="view__item view__item--big" title="Изменить вид">
-          </span>
-          <span class="view__item view__item--small" title="Изменить вид">
-          </span>
+          </label>
+        </span>
+      </div>
         </div>
 
         <div class="catalog-block__products-list products-list">
           <div class="products-list__item product-card">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
+
                 <div class="product-card__overlay">
                   <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
                     <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
@@ -407,19 +526,23 @@
           <div class="products-list__item product-card">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/31c/el1srn034ynbnyxnizytv450rrvafc2y.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/31c/el1srn034ynbnyxnizytv450rrvafc2y.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/a71/m8d9mzvdnqzdl5r6jhchvrakdd4j0n9c.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/a71/m8d9mzvdnqzdl5r6jhchvrakdd4j0n9c.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
                 <div class="product-card__overlay">
 
 
@@ -438,6 +561,8 @@
                     <span class="swiper-pagination-bullet"></span></div>
                   <div class="product-card__quick-order quick-order">
                     <div class="card-overlay__size-block">
+                      <span class="size-block__title">Размеры</span>
+                      <div class="size-block_sizes">
                       <span>35</span>
                       <span>36</span>
                       <span>37</span>
@@ -447,11 +572,11 @@
                       <span>41</span>
                       <span>42</span>
                     </div>
-
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="product-card__desc--new">
+              <div class="product-card__desc product-card__desc--new">
                 <span class="product-card__new">NEW</span>
                 <div class="product-card__title">
                   <a href="/catalog/women/obuv/krossovki/chernye-zhenskie-polubotinki-25-120822-0602/"
@@ -494,19 +619,23 @@
           <div class="products-list__item product-card">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/08f/13i25vzps53yhlo2cbdfzh81nrve4ej7.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/08f/13i25vzps53yhlo2cbdfzh81nrve4ej7.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/898/ik321riswap07hvxqs8hpziou1xbgs1w.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/898/ik321riswap07hvxqs8hpziou1xbgs1w.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
                 <div class="product-card__overlay">
                   <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
                     <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
@@ -573,19 +702,23 @@
           <div class="products-list__item product-card product-card--colors">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
                 <div class="product-card__overlay">
                   <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
                     <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
@@ -652,19 +785,23 @@
           <div class="products-list__item product-card product-card--colors">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
                 <div class="product-card__overlay">
                   <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
                     <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
@@ -731,19 +868,23 @@
           <div class="products-list__item product-card">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
                 <div class="product-card__overlay">
                   <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
                     <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
@@ -779,7 +920,7 @@
               </div>
             </div>
             <div class="product-card__nav">
-              <div class="product-card__nav-item">
+              <div class="product-card__nav-item is-active">
                 <span class="product-color" style="background: gray"></span>
               </div>
               <div class="product-card__nav-item">
@@ -810,19 +951,23 @@
           <div class="products-list__item product-card">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
                 <div class="product-card__overlay">
                   <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
                     <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
@@ -858,7 +1003,7 @@
               </div>
             </div>
             <div class="product-card__nav">
-              <div class="product-card__nav-item">
+              <div class="product-card__nav-item is-active">
                 <span class="product-color" style="background: gray"></span>
               </div>
               <div class="product-card__nav-item">
@@ -889,19 +1034,23 @@
           <div class="products-list__item product-card">
             <div class="product-card__main">
               <div class="product-card__header">
-                <div class="mySwiper">
+                <a class="mySwiper" href="">
                   <div class="swiper-wrapper">
+
                     <div class="product-card__image swiper-slide">
                       <img
-                        src="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg"
-                        srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/3b9/1200_1520_2/0ho30dk4yur910o08dkwvv8kprx9svn7.jpg 2x"
+                        src="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg"
+                        srcset="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg 2x"
                         alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite">
+
                     </div>
                     <div class="product-card__image swiper-slide">
-                      <img src="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/600_760_2d7a58ff99b324185ccb5ad5dfbdb5e85/j85w29josl9qptw8360is94ktw7j7qjz.jpg" srcset="https://cdn.mascotte.ru/upload/resize_cache/iblock/fe5/1200_1520_2/j85w29josl9qptw8360is94ktw7j7qjz.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
+                      <img src="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg"
+                      srcset="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite">
                     </div>
+
                   </div>
-                </div>
+                </a>
                 <div class="product-card__overlay">
                   <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
                     <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
@@ -937,7 +1086,7 @@
               </div>
             </div>
             <div class="product-card__nav">
-              <div class="product-card__nav-item">
+              <div class="product-card__nav-item is-active">
                 <span class="product-color" style="background: gray"></span>
               </div>
               <div class="product-card__nav-item">

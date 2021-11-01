@@ -146,54 +146,10 @@
     }
   }
 
-
-  .footer-contacts__caption {
-    flex: 0 0 auto;
-    margin-right: 16px;
-  }
-
-  .footer-contacts__link {
-    color: $whiteColor;
-
-    address {
-      font-style: normal;
-    }
-
-    &:hover {
-      color: $mainColor5;
-    }
-  }
 }
 .footer .header__menu-block {
   display: none;
 }
-
-.footer-menu {
-
-  .footer-menu__item {
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-
-    &:first-child {
-      margin-bottom: 32px;
-
-      .footer-menu__link {
-        font-size: 2rem;
-        line-height: 150%;
-      }
-    }
-  }
-  .footer-menu__link {
-    letter-spacing: 0.05em;
-    color: $whiteColor;
-
-    &:hover {
-      color: $mainColor5;
-    }
-  }
-}
-
 
 @media screen and (min-width: 1832px) {
   .footer {
@@ -240,5 +196,84 @@
   margin-left: 4vh;
   letter-spacing: normal;
   width: 100%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+  .footer__social-block {
+    left: 47%;
+  }
+  .footer-menu__menu-bottom {
+    margin-top: 80px;
+  }
+  .main-list__item--sale {
+    margin: 0 30px
+  }
+  .footer .footer__logo {
+    margin-left: 0;
+  }
+  .footer__bottom {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer__copyright {
+    margin: 0;
+  }
+  .luxar {
+    margin: 5px 0px 0px 170px;
+  }
+}
+
+@media screen and (min-width: 1290px) and (max-width: 1832px) {
+  .footer {
+    padding: 0;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .footer .header__menu-block {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+  .footer .main-menu, .footer .main-list {
+    margin: 0;
+  }
+  .social-list {
+    align-items: center;
+    justify-content: center;
+  }
+  .social-list__item{
+    margin: 0 5px;
+  }
+  .footer__social-block {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .line#line2{
+    transform: translateY(138px);
+    width: 50%;
+    margin: 0 auto;
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+}
+.footer__copyright {
+  margin-left: 4vh;
+  letter-spacing: normal;
+  width: 100%;
+}
+.footer .main-menu {
+  display: none;
+}
+.tel {
+  white-space: nowrap;
 }
 }
