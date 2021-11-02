@@ -36,6 +36,9 @@
 .catalog-block__view {
   display: block;
 }
+.full-grid .card-overlay__size-block {
+  text-align: center;
+}
 .filter__btn {
   border: 1px solid $mainColor2;;
   width: 240px;
@@ -86,6 +89,7 @@
 .es-grid-2 + label, .es-grid-3 + label, .es-grid-4 + label  {
   background: none;
   display: flex;
+  transition: $transition1;
   & svg {
     width: 20px;
     margin: 0 auto;
@@ -177,12 +181,20 @@
   .catalog__h1, .filter__item--catalog, .category-menu {
     display: block;
   }
+  .filter__item .main-list__link:hover {
+    color: $mainColor1;
+  }
   .catalog-block__filter  {
     display: flex;
   }
   .category-menu {
     width: 50%;
     margin: 0 auto;
+  }
+  .es-grid-2 + label, .es-grid-3 + label, .es-grid-4 + label {
+    &:hover {
+      border-bottom: 1px solid $mainColor2;
+    }
   }
   .main-manu__submenu-top {
     width: 210px;
@@ -351,6 +363,14 @@
 @media screen and (min-width: 1366px) and (max-width:  1832px) {
   .catalog__h1, .filter__item--catalog, .category-menu {
     display: block;
+  }
+  .es-grid-2 + label, .es-grid-3 + label, .es-grid-4 + label {
+    &:hover {
+      border-bottom: 1px solid $mainColor2;
+    }
+  }
+  .filter__item .main-list__link:hover {
+    color: $mainColor1;
   }
   .right-block__counter {
     position: absolute;
