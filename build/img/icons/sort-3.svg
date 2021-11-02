@@ -1,0 +1,14 @@
+<svg role="img" viewBox="0 0 14 14" class="icon icon_grid-3 radio-switch__icon">
+                  <g fill="currentColor">
+                    <path d="M0 0h3v3H0z"></path>
+                    <path d="M0 5.5h3v3H0z"></path>
+                    <path d="M0 11h3v3H0z"></path>
+                    <path d="M5.5 0h3v3h-3z"></path>
+                    <path d="M5.5 5.5h3v3h-3z"></path>
+                    <path d="M5.5 11h3v3h-3z"></path>
+                    <path d="M11 0h3v3h-3z"></path>
+                    <path d="M11 5.5h3v3h-3z"></path>
+                    <path d="M11 11h3v3h-3z"></path>
+                  </g>
+                </svg>
+
