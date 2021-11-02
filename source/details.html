@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Джайв - интернет-магазин обуви в Челябинске</title>
+  <meta name="description" content="Djaiv">
+  <meta name="keyword" content="Djaiv">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <meta name="apple-mobile-web-app-title" content="Djaiv">
+  <meta name="application-name" content="Djaiv">
+  <meta name="msapplication-TileColor" content="#8593a2">
+  <meta name="theme-color" content="#8593a2">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="Джайв - интернет-магазин обуви в Челябинске">
+  <meta property="og:url" content="">
+  <style>
+    .call--closed {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<header class="header">
+  <div class="header__ad-block">
+    <span class="header__ad-block-text">Бесплатная доставка от 5000 руб. </span>
+  </div>
+  <div class="wrapper1800">
+    <div class="header__inner">
+      <div class="header__burger-menu menu">
+        <input id="menu__toggle" type="checkbox">
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <a class="tel" href="tel:+7 (900) 062-58-09">+7 (900) 062-58-09</a>
+          <li class="main-list__item menu__item">
+            <a class="main-list__link" href="#">Женская обувь</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+              <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+            </svg>
+            <div class="main-list_submenu">
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Все</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Весна/Осень</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Лето</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Зима</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Туфли женские</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Кроссовки, кеды женские</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-list__item menu__item">
+            <a class="main-list__link" href="#">Мужская обувь</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+              <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+            </svg>
+            <div class="main-list_submenu">
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Все</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Весна/Осень</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Лето</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Зима</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Туфли женские</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu__link" href="#">Кроссовки, кеды женские</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                    <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-list__item menu__item">
+            <a class="main-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="header__logo logo">
+        <a class="logo__link" href="#">
+          <picture>
+            <source id="desktop-logo" media="(min-width: 900px)" srcset="img/logos/logo-desktop.png">
+            <img src="img/logos/logo.svg" alt="Djaiv" class="logo__img">
+          </picture>
+        </a>
+      </figure>
+      <div class="header__menu-block">
+        <div class="header__second-menu-block">
+          <nav class="second-menu">
+            <ul class="second-menu__list second-list">
+              <li class="second-list__item second-list__item--address">
+                <a class="second-list__link second-list__link--address" href="#">Адреса магазинов</a>
+                <ul class="second-menu__submenu submenu">
+                  <li class="submenu__item"><a href="/kontakty/">ул. Гагарина, д 33</a></li>
+                  <li class="submenu__item"><a href="/kontakty/">ул. Гагарина, д 26</a></li>
+                  <li class="submenu__item"><a href="/kontakty/">Копейское шоссе 64</a></li>
+                  <li class="submenu__item"><a href="/kontakty/">Каслинская 64</a></li>
+                </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                  <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                </svg>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Для покупателя</a>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Доставка</a>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="header__main-menu-block">
+          <nav class="main-menu">
+            <ul class="main-menu__list main-list">
+              <li class="main-list__item">
+
+                <a class="main-list__link" href="#">Женская обувь</a>
+                <ul class="submenu__block submenu--female">
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Весна/Осень</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Лето</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Зима</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Туфли женские</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Кроссовки, кеды женские</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-list__item">
+                <a class="main-list__link" href="#">Мужская обувь</a>
+                <ul class="submenu__block submenu--male">
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Весна/Осень</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Лето</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Зима</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Туфли мужские</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Кроссовки мужские</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Мокасины мужские</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-list__item main-list__item main-list__item--sale">
+                <a class="main-list__link" href="#">Распродажа</a>
+                <ul class="submenu__block submenu--sale">
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Боссоножки</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Кроссовки</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Туфли</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Весна/Осень</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Зимние</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="link submenu__link" href="#">Все предложения</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </nav>
+
+        </div>
+      </div>
+      <div class="header_right-block right-block">
+        <a class="right-block__tel tel" href="tel:+7 (900) 062-58-09">+7 (900) 062-58-09</a>
+        <div class="right-block__btn-block">
+          <a class="right-block__btn right-block__btn--search" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25.719" height="25.719" viewBox="0 0 25.719 25.719">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #7a899a;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path class="cls-1" d="M252.526,39.128l-5.071-5.07a11.793,11.793,0,1,0-.874.874L251.652,40A0.618,0.618,0,0,0,252.526,39.128Zm-13.785-2.406a10.505,10.505,0,1,1,10.5-10.506A10.518,10.518,0,0,1,238.741,36.722Z" transform="translate(-227 -14.469)"/>
+            </svg>
+            <span class="right-block__text">Поиск</span>
+
+          </a>
+          <a class="right-block__btn right-block__btn--select select-active" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.781" height="24.406" viewBox="0 0 26.781 24.406">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #7a899a;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M307.479,22.559c-0.391-4.219-3.439-7.28-7.254-7.28a7.239,7.239,0,0,0-6.177,3.487,6.973,6.973,0,0,0-6.029-3.487c-3.814,0-6.863,3.061-7.254,7.279a7.373,7.373,0,0,0,.228,2.767,11.823,11.823,0,0,0,3.711,6.067l9.338,8.3,9.5-8.3a11.83,11.83,0,0,0,3.711-6.067A7.4,7.4,0,0,0,307.479,22.559Zm-1.232,2.535a10.811,10.811,0,0,1-3.4,5.547l-8.8,7.694L285.4,30.643a10.824,10.824,0,0,1-3.4-5.55,6.453,6.453,0,0,1-.215-2.374l0.008-.051c0.335-3.7,2.954-6.379,6.229-6.379a6.041,6.041,0,0,1,5.552,3.8l0.474,1.1,0.475-1.1a6.228,6.228,0,0,1,5.706-3.795c3.274,0,5.893,2.683,6.235,6.427A6.423,6.423,0,0,1,306.247,25.094Z" transform="translate(-280.719 -15.281)"/>
+            </svg>
+            <span class="right-block__counter right-block__counter--select">5</span>
+            <span class="right-block__text">Избранное</span>
+          </a>
+          <a class="right-block__btn right-block__btn--basket" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23.219" height="27.531" viewBox="0 0 23.219 26.531">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #7a899a;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M357.858,17.611H354.2v-2.4a2.411,2.411,0,0,0-2.419-2.4H345a2.411,2.411,0,0,0-2.419,2.4v2.4h-3.662a0.482,0.482,0,0,0-.484.48L336.78,38.874a0.482,0.482,0,0,0,.484.48h22.252a0.482,0.482,0,0,0,.484-0.48L358.341,18.09A0.481,0.481,0,0,0,357.858,17.611Zm-14.305-2.4A1.444,1.444,0,0,1,345,13.776h6.772a1.445,1.445,0,0,1,1.452,1.438v2.4h-9.675v-2.4Zm15.479,23.181H337.748l1.658-19.825h3.179v1.917a0.484,0.484,0,0,0,.968,0V18.57h9.675v1.917a0.484,0.484,0,0,0,.967,0V18.57h3.179Z" transform="translate(-336.781 -12.813)"/>
+            </svg>
+            <span class="right-block__counter right-block__counter--basket">6</span>
+            <span class="right-block__text">Корзина</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="catalog-block__filter filter filter--fixed">
+      <ul class="filter__list">
+        <li class="filter__item filter__item--catalog">
+          <button class="filter__link" href="#">Каталог</button>
+        </li>
+        <li class="filter__item filter__item--sort">
+          <button class="filter__link link" href="#">Отфильтровать/упорядочить</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="sidebar sidebar_search search-form" id="search-form">
+    <header class="sidebar__header">
+      <form action="" method="GET" class="sidebar__header-extra search-form__form" id="search-bar">
+        <label class="input search-form__input">
+          <svg role="img" viewBox="0 0 12.4 12.4" class="icon icon_search input__icon">
+            <g transform="translate(-1270 -70)" fill="none" stroke="currentColor">
+              <circle cx="1275" cy="75" r="4.5"></circle>
+              <path d="M1278 78l4 4"></path>
+            </g>
+          </svg>
+          <input type="text" value="" placeholder="Введите название товара, артикул или бренд..." class="input__control tt-input" role="combobox">
+
+        </label>
+        <div class="search-form__controls">
+          <button class="link search-form__submit">
+            <svg role="img" viewBox="0 0 15.2 9.9" class="icon icon_return link__icon">
+              <g fill="none" stroke="currentColor">
+                <path d="M4.7 1.5l-4 4 4 4"></path>
+                <path d="M9.7.5h4c.6 0 1 .4 1 1v3c0 .6-.4 1-1 1H.7"></path>
+              </g>
+            </svg>
+          </button>
+          <button class="link search-form__reset">
+            <svg role="img" viewBox="0 0 10.7 10.7" class="icon icon_close link__icon">
+              <g fill="none" stroke="currentColor">
+                <path d="M.4.4l10 10"></path>
+                <path d="M10.4.4l-10 10"></path>
+              </g>
+            </svg>
+          </button>
+
+        </div>
+      </form>
+    </header>
+
+  </div>
+</header>
+
+<main class="main-block detail">
+  <div class="wrapper1800 wrapper1800--mobile">
+
+    <section class="detail__content-block detail-block">
+      <div class="products-list__item product-card full-grid">
+        <div class="product-card__main">
+          <div class="product-card__header">
+
+            <a class="mySwiper swiper-initialized swiper-horizontal swiper-pointer-events" href="details.html">
+              <div class="swiper-wrapper" id="swiper-wrapper-f9e7101e57104af468" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+
+                <div class="product-card__image swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 375px; margin-right: 40px;">
+                  <img src="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg" srcset="https://cdn.mascotte.ru/upload/iblock/585/4zo3mjjuk35uz4edzt1b8l2zrk39m2r7.jpg 2x" alt="25-120822-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/текстиль-нат.кожа черн, Mascotte Lite" style="transform: scale(1);">
+
+                </div>
+                <div class="product-card__image swiper-slide swiper-slide-next" role="group" aria-label="2 / 2" style="width: 375px; margin-right: 40px;">
+                  <img src="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg" srcset="https://cdn.mascotte.ru/upload/iblock/98c/glu1ogz9mj31qi3z5fmdtdy4ivjxc5hq.jpg 2x" alt="25-120711-0602 Полуботинки для активного отдыха женские и.кожа-текстиль/нат.кожа-текстиль черн, Mascotte Lite" style="transform: scale(1);">
+                </div>
+
+              </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></a>
+
+            <div class="product-card__overlay">
+              <button type="button" class="link link_style_button link_theme_favorite product-card__favorite js-login-form" tabindex="0" data-target="/bitrix/services/main/ajax.php?action=formLogin&amp;SITE_ID=s1&amp;c=mascotte%3Aheader.profile&amp;mode=class" aria-pressed="false">
+                <svg role="img" viewBox="0 0 12 11" class="icon icon_heart link__icon">
+                  <path stroke="currentColor" fill="none" d="M5.7 10.2C2.6 7.9 1.3 6.1.8 4.9.3 3.7.4 2.7 1 1.8 1.5 1 2.5.5 3.5.5c.5 0 1.4.1 2.1 1l.4.4.4-.5C7.1.6 8 .4 8.5.4c1 0 2 .5 2.5 1.3.6.8.6 1.9.1 3.1-.5 1.1-1.7 3-4.9 5.2l-.2.4-.3-.2z"></path>
+                </svg>
+              </button>
+
+              <button type="button" class="link link_style_button product-card__prev swiper-button-prev swiper-button-disabled" tabindex="-1" disabled="" aria-label="Previous slide" aria-controls="swiper-wrapper-f9e7101e57104af468" aria-disabled="true">
+                <svg role="img" viewBox="0 0 8 10.7" class="icon icon_chevron-medium link__icon icon_dir_l">
+                  <path fill="none" stroke="currentColor" d="M2.3.4l5 5-5 5"></path>
+                </svg>
+              </button>
+              <button type="button" class="link link_style_button product-card__next swiper-button-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-f9e7101e57104af468" aria-disabled="false">
+                <svg role="img" viewBox="0 0 8 10.7" class="icon icon_chevron-medium link__icon">
+                  <path fill="none" stroke="currentColor" d="M2.3.4l5 5-5 5"></path>
+                </svg>
+              </button>
+              <div class="product-card__pagination swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+              <div class="product-card__quick-order quick-order">
+
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+        <div class="product-card__desc">
+
+
+          <div class="product-card__title">
+            <b>босоножки женские</b>
+            <span>Артикул 54-LOT 330 пудра</span>
+          </div>
+
+
+          <div class="product-card__free_sheep top">
+            <div class="free_sheeping">
+              <div class="free_sheeping__container">
+                <div class="free_sheeping__text">
+                  <span>Бесплатная</span>
+                  доставка с
+                  примеркой по Челябинску
+                </div>
+              </div>
+            </div>                        </div>
+
+          <div class="product-card__property">
+            <ul>
+              <li class="color">Цвет:<br>
+                <span><i style="background-image: url(/upload/uf/852/44.jpg);"></i>Пудра</span>
+              </li>
+              <li>Материал верха:<br>
+                <span>Натуральная кожа</span>
+              </li>
+              <li>Материал подклада:<br>
+                <span>Натуральная кожа</span>
+              </li>
+              <li>Материал подошвы:<br>
+                <span>Синтетические материалы</span>
+              </li>
+              <li>Высота каблука:<br>
+                <span>3,5 см</span>
+              </li>
+              <li>Соответствие размера:<br>
+                <span>размер в размер</span>
+              </li>
+              <li>Высота подошвы:<br>
+                <span>2 см</span>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="product-card__size">
+            <span>Размеры:</span>
+            <div class="size-list">
+              <div data-id="44139" class="active">
+                35                                    </div>
+              <div data-id="44140" class="not-available">
+                36                                    </div>
+              <div data-id="44143" class="not-available">
+                37                                    </div>
+              <div data-id="44142" class="not-available">
+                38                                    </div>
+              <div data-id="44141" class="not-available">
+                39                                    </div>
+              <div data-id="44144">
+                40                                    </div>
+            </div>
+            <input type="hidden" id="productIDs" value="44139,44140,44143,44142,44141,44144">
+          </div>
+
+
+          <div class="product-card__size_table">
+            Размерная <a href="/local/templates/djive/images/sizes.jpg" data-fancybox="">таблица</a>
+          </div>
+
+          <a href="/voprosy-i-otvety/tablitsa-razmerov/kak-opredelit-razmer/" class="size_table_how">Как определить свой размер обуви</a>
+          <br><br>
+          <div class="product__stores" id="product_stores">
+            <span>Наличие на складах:</span>
+            <div class="product__stores_list"><div class="store"><span class="title" title="Копейское шоссе 64, ТРК «Алмаз»  (галерея обуви)">Алмаз</span><span class="value">1 шт.</span></div></div>
+          </div>
+
+          <div class="product__delivery">
+            <a data-fancybox="" data-src="#usloviya-dostavka" href="javascript:;">
+              <img src="/local/templates/djive/images/delivery_icon.svg" alt="Условия доставки">
+              <span>Условия доставки</span>
+            </a>
+            <a data-fancybox="" data-src="#usloviya-oplaty" href="javascript:;">
+              <img src="/local/templates/djive/images/wallet_icon.svg" alt="Условия оплаты">
+              <span>Условия оплаты</span>
+            </a>
+          </div>
+          <div style="display: none;" class="popup-delivery" id="usloviya-oplaty">
+            <h2>
+              Условия оплаты </h2>
+            <h3>
+              Курьеру </h3>
+            Вы можете оплатить Ваш заказ наличными или банковской картой курьеру при получении товара.<br> Вместе с заказом Вы получаете товарный и кассовый чек.<br> Вы сможете проверить комплектацию и качество заказа в присутствии курьера.
+            <h3>
+              Наложенным платежом в пункте выдачи </h3>
+            <p>
+              Вы можете оплатить заказ наличными или банковской картой в пункте выдачи – в отделении Почты России или курьерской службы.<br> При получении посылки «Наложенным платежом» может дополнительно взиматься комиссия оператором услуг за проведение платежа. Вместе с заказом Вы получаете товарный и кассовый чек.
+            </p>
+            <h3>
+              В магазинах Джайв </h3>
+            <p>
+              Вы можете оплатить заказ наличными или банковской картой в наших магазинах Джайв в городе Челябинск.<br> Вместе с заказом Вы получаете товарный и кассовый чек.
+            </p>
+            <p>
+              &nbsp;
+            </p>
+            <p>
+              Выбрать товар и оформить заказ можно как в фирменных магазинах Джайв, так и на сайте <a href="https://djive.ru/">https://djive.ru/</a>.
+            </p>
+            <p>
+              После оформления заказа на сайте с Вами свяжется наш менеджер по e-mail или указанному Вами номеру телефона.
+            </p>
+            <br>
+          </div>
+          <div style="display: none;" class="popup-delivery" id="usloviya-dostavka">
+            <p>
+            </p>
+            <h2>Доставка</h2>
+            <h3>По г. Челябинск</h3>
+            БЕСПЛАТНАЯ доставка с примеркой до 7 пар <br>
+            Выполняется курьером <br>
+            С понедельника по пятницу с 10:00 до 20:00 <br>
+            В субботу и воскресенье с 12:00 до 16:00 <br>
+            <h2>По РФ</h2>
+            <h3>1.&nbsp;&nbsp; Почта России</h3>
+            БЕСПЛАТНО, при покупке обуви от 5000 рублей, <br>
+            за исключением следующих субъектов РФ: Крым, <br>
+            Сахалин, Камчатка, районы Крайнего Севера и <br>
+            приравненные к ним территории. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            Срок доставки от 3 до 15 дней. <br>
+            Посылка с заказом будет доставлена в ближайшее <br>
+            почтовое отделение, относительно указанного адреса <br>
+            во время оформления заказа.
+            <h3>2.&nbsp;&nbsp; Доставка курьерской службой СДЭК</h3>
+            БЕСПЛАТНО, при покупке обуви от 5000 рублей, <br>
+            за исключением следующих субъектов РФ: Крым, <br>
+            Сахалин, Камчатка, районы Крайнего Севера и <br>
+            приравненные к ним территории. <br>
+            Стоимость доставки рассчитывается в зависимости от <br>
+            вашего местонахождения. <br>
+            Срок доставки 3-15 дней. <br>
+            На ваше усмотрение, в курьерской службе СДЭК заказ можно получить в пункте выдаче или оформить доставку <br>
+            посылки домой. <br>
+            Если обувь не подошла, то покупатель оплачивает стоимость доставки в обе стороны (туда и обратно). <br>
+            Для отправки заказа необходимо внести предоплату 1000 рублей. <br>
+            Доплата оставшейся суммы осуществляется наложенным платежом при получении заказа.&nbsp;&nbsp;&nbsp; <br>
+            За услугу наложенного платежа СДЭК взимает комиссию 3%.
+
+          </div>
+
+
+          <div class="product-card__price_old">
+            <span>7&nbsp;400</span> руб.
+          </div>
+          <div class="product-card__price">
+            <span>5900</span> руб.
+          </div>
+
+          <div class="product__order">
+            <div class="product__order_message" style="display: none;"><h3>Товар добавлен в <a href="/cart/">корзину</a>.</h3></div>
+
+            <input type="hidden" id="productID" value="44139">
+
+            <a class="product-card__btn btn" href="#" onclick="return addToCart();" id="addToCart">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="32px">
+                                        <path fill-rule="evenodd" d="M25.417,5.781 L21.000,5.781 L21.000,2.891 C20.998,1.295 19.693,0.002 18.083,-0.000 L9.917,-0.000 C8.307,0.002 7.002,1.295 7.000,2.891 L7.000,5.781 L2.583,5.781 C2.261,5.781 2.000,6.040 2.000,6.359 L-0.000,31.422 C-0.000,31.741 0.261,32.000 0.583,32.000 L27.417,32.000 C27.739,32.000 28.000,31.741 28.000,31.422 L26.000,6.359 C26.000,6.040 25.739,5.781 25.417,5.781 ZM8.167,2.891 C8.167,1.933 8.950,1.156 9.917,1.156 L18.083,1.156 C19.050,1.156 19.833,1.933 19.833,2.891 L19.833,5.781 L8.167,5.781 L8.167,2.891 ZM26.833,30.844 L1.167,30.844 L3.167,6.937 L7.000,6.937 L7.000,9.250 C7.000,9.569 7.261,9.828 7.583,9.828 C7.905,9.828 8.167,9.569 8.167,9.250 L8.167,6.937 L19.833,6.937 L19.833,9.250 C19.833,9.569 20.094,9.828 20.417,9.828 C20.739,9.828 21.000,9.569 21.000,9.250 L21.000,6.937 L24.833,6.937 L26.833,30.844 Z"></path>
+                                    </svg>
+                                    Добавить в корзину
+                                </span>
+            </a>
+
+            <a class="product-card__btn btn" href="/cart/" style="display: none;" id="goToCart">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="32px">
+                                        <path fill-rule="evenodd" d="M25.417,5.781 L21.000,5.781 L21.000,2.891 C20.998,1.295 19.693,0.002 18.083,-0.000 L9.917,-0.000 C8.307,0.002 7.002,1.295 7.000,2.891 L7.000,5.781 L2.583,5.781 C2.261,5.781 2.000,6.040 2.000,6.359 L-0.000,31.422 C-0.000,31.741 0.261,32.000 0.583,32.000 L27.417,32.000 C27.739,32.000 28.000,31.741 28.000,31.422 L26.000,6.359 C26.000,6.040 25.739,5.781 25.417,5.781 ZM8.167,2.891 C8.167,1.933 8.950,1.156 9.917,1.156 L18.083,1.156 C19.050,1.156 19.833,1.933 19.833,2.891 L19.833,5.781 L8.167,5.781 L8.167,2.891 ZM26.833,30.844 L1.167,30.844 L3.167,6.937 L7.000,6.937 L7.000,9.250 C7.000,9.569 7.261,9.828 7.583,9.828 C7.905,9.828 8.167,9.569 8.167,9.250 L8.167,6.937 L19.833,6.937 L19.833,9.250 C19.833,9.569 20.094,9.828 20.417,9.828 C20.739,9.828 21.000,9.569 21.000,9.250 L21.000,6.937 L24.833,6.937 L26.833,30.844 Z"></path>
+                                    </svg>
+                                    Перейти в корзину
+                                </span>
+            </a>
+
+          </div>
+
+          <div class="product-card__control">
+            <div class="mini-control">
+              <div class="row">
+                <div class="col">
+                  <div class="product-card__title">
+                    <b>босоножки женские</b>
+                    <span>Артикул 54-LOT 330 пудра</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product-card__price_old" style="display: none;">
+                  </div>
+                  <div class="product-card__price">
+                    <span>5900</span> руб.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mini-control__size">
+                    <a class="mini-control__show" href="#">
+                      Выбрать размер
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="9px">
+                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M12.003,2.317 L6.000,8.813 L-0.003,2.317 L1.382,0.818 L6.000,5.815 L10.618,0.818 L12.003,2.317 Z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <a class="product-card__btn btn" href="#" onclick="return addToCart();" id="addToCart-mobile">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="22px">
+                                        <path fill-rule="evenodd" d="M17.247,3.975 L14.250,3.975 L14.250,1.987 C14.249,0.890 13.363,0.001 12.271,-0.000 L6.729,-0.000 C5.637,0.001 4.751,0.890 4.750,1.987 L4.750,3.975 L1.753,3.975 C1.534,3.975 1.357,4.153 1.357,4.372 L-0.000,21.602 C-0.000,21.822 0.177,22.000 0.396,22.000 L18.604,22.000 C18.823,22.000 19.000,21.822 19.000,21.602 L17.643,4.372 C17.643,4.153 17.466,3.975 17.247,3.975 ZM5.542,1.987 C5.542,1.329 6.073,0.795 6.729,0.795 L12.271,0.795 C12.927,0.795 13.458,1.329 13.458,1.987 L13.458,3.975 L5.542,3.975 L5.542,1.987 ZM18.208,21.205 L0.792,21.205 L2.149,4.769 L4.750,4.769 L4.750,6.359 C4.750,6.579 4.927,6.757 5.146,6.757 C5.364,6.757 5.542,6.579 5.542,6.359 L5.542,4.769 L13.458,4.769 L13.458,6.359 C13.458,6.579 13.636,6.757 13.854,6.757 C14.073,6.757 14.250,6.579 14.250,6.359 L14.250,4.769 L16.851,4.769 L18.208,21.205 Z"></path>
+                                    </svg>
+                                    Добавить
+                                </span>
+                  </a>
+
+                  <a class="product-card__btn btn" href="/cart/" style="display: none;" id="goToCart-mobile">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="22px">
+                                        <path fill-rule="evenodd" d="M17.247,3.975 L14.250,3.975 L14.250,1.987 C14.249,0.890 13.363,0.001 12.271,-0.000 L6.729,-0.000 C5.637,0.001 4.751,0.890 4.750,1.987 L4.750,3.975 L1.753,3.975 C1.534,3.975 1.357,4.153 1.357,4.372 L-0.000,21.602 C-0.000,21.822 0.177,22.000 0.396,22.000 L18.604,22.000 C18.823,22.000 19.000,21.822 19.000,21.602 L17.643,4.372 C17.643,4.153 17.466,3.975 17.247,3.975 ZM5.542,1.987 C5.542,1.329 6.073,0.795 6.729,0.795 L12.271,0.795 C12.927,0.795 13.458,1.329 13.458,1.987 L13.458,3.975 L5.542,3.975 L5.542,1.987 ZM18.208,21.205 L0.792,21.205 L2.149,4.769 L4.750,4.769 L4.750,6.359 C4.750,6.579 4.927,6.757 5.146,6.757 C5.364,6.757 5.542,6.579 5.542,6.359 L5.542,4.769 L13.458,4.769 L13.458,6.359 C13.458,6.579 13.636,6.757 13.854,6.757 C14.073,6.757 14.250,6.579 14.250,6.359 L14.250,4.769 L16.851,4.769 L18.208,21.205 Z"></path>
+                                    </svg>
+                                    В корзину
+                                </span>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="size-list">
+                  <div data-id="44139" class="active">
+                    35                                            </div>
+                  <div data-id="44140" class="not-available">
+                    36                                            </div>
+                  <div data-id="44143" class="not-available">
+                    37                                            </div>
+                  <div data-id="44142" class="not-available">
+                    38                                            </div>
+                  <div data-id="44141" class="not-available">
+                    39                                            </div>
+                  <div data-id="44144">
+                    40                                            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="line" id="line1"></div>
+  <div class="line" id="line2"></div>
+  <div class="wrapper1800">
+    <div class="footer__inner">
+      <div class="header__menu-block">
+        <figure class="footer__logo logo">
+          <a class="logo__link" href="#">
+            <picture>
+              <source id="desktop-logo" media="(min-width: 900px)" srcset="img/logos/logo-desktop.png">
+              <img src="img/logos/logo.svg" alt="Djaiv" class="logo__img">
+            </picture>
+          </a>
+        </figure>
+        <div class="header__second-menu-block">
+          <nav class="second-menu">
+            <ul class="second-menu__list second-list">
+              <li class="second-list__item second-list__item--address">
+                <a class="second-list__link second-list__link--address">Адреса магазинов</a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon_chevron icon_dir_b">
+                  <path fill="none" stroke="currentColor" d="M6 12l4-4-4-4"></path>
+                </svg>
+                <ul class="second-menu__submenu submenu">
+                  <li class="submenu__item"><a href="/kontakty/">ул. Гагарина, д 33</a></li>
+                  <li class="submenu__item"><a href="/kontakty/">ул. Гагарина, д 26</a></li>
+                  <li class="submenu__item"><a href="/kontakty/">Копейское шоссе 64</a></li>
+                  <li class="submenu__item"><a href="/kontakty/">Каслинская 64</a></li>
+                </ul>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Для покупателя</a>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Доставка</a>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__main-menu-block">
+          <nav class="main-menu">
+            <ul class="main-menu__list main-list">
+              <li class="main-list__item">
+                <a class="main-list__link" href="#">Женская обувь</a>
+              </li>
+              <li class="main-list__item">
+                <a class="main-list__link" href="#">Мужская обувь</a>
+              </li>
+              <li class="main-list__item main-list__item main-list__item--sale">
+                <a class="main-list__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a class="footer-inner__tel tel" href="tel:+7 (900) 062-58-09">+7 (900) 062-58-09</a>
+      </div>
+
+      <div class="footer__menu-block footer-menu">
+        <div class="footer-menu__main-menu">
+          <ul class="main-menu__list main-list">
+            <li class="main-list__item">
+              <a class="main-list__link" href="#">Женская обувь</a>
+            </li>
+            <li class="main-list__item">
+              <a class="main-list__link" href="#">Мужская обувь</a>
+            </li>
+            <li class="main-list__item main-list__item--sale">
+              <a class="main-list__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu__menu-bottom">
+          <div class="footer-menu__second-menu">
+            <ul class="second-menu__list second-list">
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Адреса магазинов</a>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Для покупателя</a>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Доставка</a>
+              </li>
+              <li class="second-list__item">
+                <a class="second-list__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <a class="footer-inner__tel tel" href="tel:+7 (900) 062-58-09">+7 (900) 062-58-09</a>
+          <figure class="footer__logo logo">
+            <a class="logo__link" href="#">
+              <picture>
+                <source id="desktop-logo" media="(min-width: 900px)" srcset="img/logos/logo-desktop.png">
+                <img src="img/logos/logo.svg" alt="Djaiv" class="logo__img">
+              </picture>
+            </a>
+          </figure>
+        </div>
+
+
+      </div>
+      <div class="footer__social-block">
+        <ul class="footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__icon--vk" href="#"><span class="visual-hidden">Мы В
+                  Контакте</span> <img class="icon" src="img/icons/socials/vk.svg" width="22px" height="13px">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__icon--inst" href="#"><span class="visual-hidden">Мы в
+                  Инстаграмме</span> <img class="icon" src="img/icons/socials/inst.svg" width="22px" height="22px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2021. Интернет-витрина магазина — салон обуви Джайв</p>
+      <a class="luxar" target="_blank" href="https://luxar.group/">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="110px" height="33px" version="1.1"
+             style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+             viewBox="0 0 2730 821" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <style type="text/css">
+                .fil0 {
+                  fill: #6AEBEB
+                }
+
+                .fil1 {
+                  fill: #6e727e;
+                  fill-rule: nonzero
+                }
+
+              </style>
+            </defs>
+          <g>
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+            <polygon class="fil0"
+                     points="615,353 871,0 641,393 775,600 718,600 613,437 344,821 587,397 464,206 520,206 "></polygon>
+            <path class="fil1"
+                  d="M1025 552l-37 -94 -119 0 -36 94 -35 0 117 -297 29 0 116 297 -35 0zm-48 -125l-34 -92c-5,-11 -9,-26 -14,-42 -3,12 -7,27 -13,42l-35 92 96 0zm159 2l0 123 -35 0 0 -296 81 0c37,0 64,7 81,21 17,14 26,35 26,63 0,39 -20,66 -60,79l81 133 -41 0 -72 -123 -61 0zm0 -29l47 0c24,0 42,-5 53,-15 12,-9 17,-24 17,-43 0,-20 -5,-34 -17,-43 -12,-8 -30,-13 -56,-13l-44 0 0 114zm352 -3l101 0 0 144c-16,5 -32,9 -48,12 -16,2 -35,4 -56,4 -45,0 -80,-14 -105,-40 -25,-27 -38,-64 -38,-113 0,-30 7,-57 19,-81 12,-23 30,-40 53,-53 24,-12 51,-18 82,-18 32,0 61,6 88,17l-13 31c-27,-12 -53,-17 -77,-17 -36,0 -65,10 -85,32 -20,21 -30,51 -30,89 0,40 10,71 29,91 20,21 48,31 86,31 21,0 41,-2 60,-7l0 -91 -66 0 0 -31zm206 32l0 123 -34 0 0 -296 81 0c37,0 63,7 81,21 17,14 26,35 26,63 0,39 -20,66 -60,79l81 133 -41 0 -72 -123 -62 0zm0 -29l48 0c24,0 42,-5 53,-15 11,-9 17,-24 17,-43 0,-20 -6,-34 -17,-43 -12,-8 -30,-13 -56,-13l-45 0 0 114zm480 4c0,47 -12,85 -36,112 -24,27 -57,41 -100,41 -44,0 -78,-14 -101,-40 -24,-27 -36,-65 -36,-113 0,-49 12,-86 36,-113 24,-26 57,-39 101,-39 43,0 76,13 100,40 24,27 36,64 36,112zm-236 0c0,40 8,70 25,91 17,21 42,31 75,31 33,0 58,-10 74,-31 17,-20 25,-51 25,-91 0,-40 -8,-70 -25,-91 -16,-20 -41,-31 -74,-31 -33,0 -58,11 -75,31 -17,21 -25,51 -25,91zm526 -148l0 192c0,34 -10,60 -31,80 -20,19 -48,29 -84,29 -36,0 -63,-10 -83,-30 -19,-19 -29,-46 -29,-80l0 -191 34 0 0 193c0,25 7,44 21,57 13,14 33,20 59,20 25,0 44,-6 58,-20 13,-13 20,-32 20,-57l0 -193 35 0zm266 86c0,30 -10,53 -31,70 -20,16 -49,24 -88,24l-34 0 0 116 -35 0 0 -296 77 0c74,0 111,29 111,86zm-153 64l31 0c30,0 52,-5 66,-14 14,-10 20,-26 20,-48 0,-19 -6,-34 -19,-44 -13,-9 -33,-14 -60,-14l-38 0 0 120zm-2577 146l0 -296 34 0 0 265 131 0 0 31 -165 0zm435 -296l0 192c0,34 -10,60 -30,80 -21,19 -49,29 -85,29 -35,0 -63,-10 -82,-30 -20,-19 -30,-46 -30,-80l0 -191 35 0 0 193c0,25 7,44 20,57 14,14 33,20 60,20 25,0 44,-6 57,-20 14,-13 21,-32 21,-57l0 -193 34 0z">
+              </path>
+            <path class="fil1"
+                  d="M1 129l0 -128 25 0 30 91c3,8 5,14 6,19 2,-5 4,-12 7,-21l31 -89 23 0 0 128 -17 0 0 -107 -37 107 -15 0 -37 -109 0 109 -16 0zm135 0l49 -128 18 0 52 128 -19 0 -15 -39 -54 0 -13 39 -18 0zm36 -53l44 0 -13 -35c-4,-11 -7,-20 -10,-27 -1,9 -4,17 -7,25l-14 37zm97 53l0 -128 44 0c9,0 17,1 22,2 8,2 14,5 19,9 7,6 12,13 15,22 3,9 5,19 5,30 0,10 -1,19 -3,26 -3,8 -5,14 -9,19 -4,5 -7,9 -12,11 -4,3 -9,5 -15,7 -6,1 -13,2 -20,2l-46 0zm17 -15l27 0c8,0 15,-1 20,-2 4,-2 8,-4 11,-7 4,-4 7,-9 9,-16 3,-7 4,-15 4,-25 0,-13 -3,-24 -7,-31 -4,-7 -10,-12 -16,-14 -4,-2 -12,-3 -22,-3l-26 0 0 98zm112 15l0 -128 92 0 0 15 -75 0 0 39 70 0 0 15 -70 0 0 44 78 0 0 15 -95 0zm171 0l0 -128 17 0 0 128 -17 0zm46 0l0 -128 18 0 67 100 0 -100 16 0 0 128 -18 0 -67 -100 0 100 -16 0z">
+              </path>
+            </g>
+          </svg>
+      </a>
+    </div>
+
+  </div>
+
+
+
+</footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

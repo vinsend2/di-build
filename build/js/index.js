@@ -16,13 +16,19 @@ const initFixedHeader = () => {
   }
 };
 
+
 const switcherButton = () => {
+
+  if (document.querySelector("#Grid1") === null) {
+    return false;
+  }
+
   const button1 = document.querySelector("#Grid1");
   const button2 = document.querySelector("#Grid2");
   const button3 = document.querySelector("#Grid3");
   const button4 = document.querySelector("#Grid4");
 
-  const grid2 = document.querySelector(".products-list");
+
   const img = document.querySelectorAll(".swiper-slide > img");
   const imgBlock = document.querySelectorAll(".swiper-slide");
   const cardBlock = document.querySelectorAll(".product-card");
@@ -32,7 +38,7 @@ const switcherButton = () => {
   const width = window.screen.availWidth;
 
   button2.onclick = function() {
-    button1.querySelector("svg").style.fill = 'gray';
+    button1.querySelector("svg").style.fill = 'darkgray';
     button2.querySelector("label").style.background = 'url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGlkPSJwcmVmaXhfX2ljb25fdmlld19yb3dzX2FjdGl2ZSIgZGF0YS1uYW1lPSJpY29uIHZpZXcgcm93cyBhY3RpdmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0uMDI5IC0uMDI5KSI+CiAgICAgICAgPGcgaWQ9InByZWZpeF9fUmVjdGFuZ2xlXzE4NSIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMTg1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDI5IC4wMjkpIiBzdHlsZT0ic3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjNweDtmaWxsOm5vbmUiPgogICAgICAgICAgICA8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSIxIiBzdHlsZT0ic3Ryb2tlOm5vbmUiLz4KICAgICAgICAgICAgPHJlY3Qgd2lkdGg9IjE3IiBoZWlnaHQ9IjE3IiB4PSIxLjUiIHk9IjEuNSIgcng9Ii41IiBzdHlsZT0iZmlsbDpub25lIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K) center center no-repeat';
     grid2.style.gridTemplateColumns = 'repeat(1,100%)';
     img.forEach(el => {
@@ -45,7 +51,7 @@ const switcherButton = () => {
   if (width > 1440) {
   button4.onclick = function() {
     button4.querySelector("svg").style.fill = 'black';
-    button3.querySelector("svg").style.fill = 'gray';
+    button3.querySelector("svg").style.fill = 'darkgray';
     grid2.style.gridTemplateColumns = 'repeat(2,38%)';
     grid2.style.justifyContent = 'center';
     cardBlock.forEach(el => {
@@ -73,7 +79,7 @@ const switcherButton = () => {
   };
   button3.onclick = function() {
     button3.querySelector("svg").style.fill = 'black';
-    button4.querySelector("svg").style.fill = 'gray';
+    button4.querySelector("svg").style.fill = 'darkgray';
     grid2.style.gridTemplateColumns = 'repeat(4,24.5%)';
     grid2.style.justifyContent = 'normal';
     cardBlock.forEach(el => {
@@ -102,7 +108,7 @@ const switcherButton = () => {
 } else {
   button4.onclick = function() {
     button4.querySelector("svg").style.fill = 'black';
-    button3.querySelector("svg").style.fill = 'gray';
+    button3.querySelector("svg").style.fill = 'darkgray';
     grid2.style.gridTemplateColumns = 'repeat(2,38%)';
     grid2.style.justifyContent = 'center';
     cardBlock.forEach(el => {
@@ -130,7 +136,7 @@ const switcherButton = () => {
   };
   button3.onclick = function() {
     button3.querySelector("svg").style.fill = 'black';
-    button4.querySelector("svg").style.fill = 'gray';
+    button4.querySelector("svg").style.fill = 'darkgray';
     grid2.style.gridTemplateColumns = 'repeat(4,24.5%)';
     grid2.style.justifyContent = 'normal';
     cardBlock.forEach(el => {
@@ -296,6 +302,7 @@ document.addEventListener(
     swiperPrew1();
     searchOpen();
     addressOpen();
+
   },
   false
 );

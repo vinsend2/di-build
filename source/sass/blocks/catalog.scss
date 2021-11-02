@@ -21,6 +21,22 @@
 .product-card--new > .product-card__new {
   display: block;
 }
+.product-card__order {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  height: 90px;
+  background: white;
+  transition: $transition1;
+  &:hover {
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 
 .product-card__desc {
   line-height: normal;
@@ -36,8 +52,17 @@
 .catalog-block__view {
   display: block;
 }
+.full-grid .product-card__overlay {
+  visibility: visible;
+  opacity: 1;
+}
 .full-grid .card-overlay__size-block {
   text-align: center;
+  display: block;
+  bottom: 14%;
+}
+.full-grid .link_style_button {
+  color: $mainColor2;
 }
 .filter__btn {
   border: 1px solid $mainColor2;;
@@ -97,7 +122,7 @@
   }
 }
 .es-grid-4 + label svg {
-  fill: gray;
+  fill: darkgray;
 }
 //.es-grid-1 + label {
 //  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGlkPSJwcmVmaXhfX2ljb25fdmlld19yb3dzX2FjdGl2ZSIgZGF0YS1uYW1lPSJpY29uIHZpZXcgcm93cyBhY3RpdmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0uMDI5IC0uMDI5KSI+CiAgICAgICAgPGcgaWQ9InByZWZpeF9fUmVjdGFuZ2xlXzE4NSIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMTg1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDI5IC4wMjkpIiBzdHlsZT0ic3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjNweDtmaWxsOm5vbmUiPgogICAgICAgICAgICA8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSIxIiBzdHlsZT0ic3Ryb2tlOm5vbmUiLz4KICAgICAgICAgICAgPHJlY3Qgd2lkdGg9IjE3IiBoZWlnaHQ9IjE3IiB4PSIxLjUiIHk9IjEuNSIgcng9Ii41IiBzdHlsZT0iZmlsbDpub25lIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K) center center no-repeat;
@@ -191,10 +216,13 @@
     width: 50%;
     margin: 0 auto;
   }
-  .es-grid-2 + label, .es-grid-3 + label, .es-grid-4 + label {
+  .es-grid-2 + label, .es-grid-3 + label, .es-grid-4 + label svg {
     &:hover {
-      border-bottom: 1px solid $mainColor2;
+     fill: gray;
     }
+  }
+  .es-select {
+    fill: gray;
   }
   .main-manu__submenu-top {
     width: 210px;
@@ -268,7 +296,7 @@
     transition: none;
   }
   .product-card__favorite svg:hover {
-    fill: red;
+    fill: black;
   }
   .product-card--colors > .product-card__nav {
     display: none;
@@ -450,7 +478,7 @@
   }
 
   .product-card__favorite svg:hover {
-    fill: red;
+    fill: black;
   }
   .product-card--colors > .product-card__nav {
     display: none;
