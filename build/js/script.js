@@ -33,15 +33,15 @@ const initFixedHeader = () => {
   }
   else {
     if (window.pageYOffset > headerHeight) {
-    header.classList.add("fixed");
-    menu.classList.add("fixed");
+      header.classList.add("fixed");
+      menu.classList.add("fixed");
 
 
-  } else {
-    header.classList.remove("fixed");
-    menu.classList.remove("fixed");
+    } else {
+      header.classList.remove("fixed");
+      menu.classList.remove("fixed");
 
-  }
+    }
   }
 };
 
@@ -67,7 +67,7 @@ const switcherButton = () => {
   const width = window.screen.availWidth;
 
   button2.onclick = function() {
-    button1.querySelector("svg").style.fill = 'darkgray';
+    button1.querySelector("svg").style.fill = '#8593a2';
     button2.querySelector("label").style.background = 'url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGlkPSJwcmVmaXhfX2ljb25fdmlld19yb3dzX2FjdGl2ZSIgZGF0YS1uYW1lPSJpY29uIHZpZXcgcm93cyBhY3RpdmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0uMDI5IC0uMDI5KSI+CiAgICAgICAgPGcgaWQ9InByZWZpeF9fUmVjdGFuZ2xlXzE4NSIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMTg1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDI5IC4wMjkpIiBzdHlsZT0ic3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjNweDtmaWxsOm5vbmUiPgogICAgICAgICAgICA8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSIxIiBzdHlsZT0ic3Ryb2tlOm5vbmUiLz4KICAgICAgICAgICAgPHJlY3Qgd2lkdGg9IjE3IiBoZWlnaHQ9IjE3IiB4PSIxLjUiIHk9IjEuNSIgcng9Ii41IiBzdHlsZT0iZmlsbDpub25lIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K) center center no-repeat';
     grid2.style.gridTemplateColumns = 'repeat(1,100%)';
     img.forEach(el => {
@@ -78,120 +78,120 @@ const switcherButton = () => {
     });
   };
   if (width > 1365) {
-  button4.onclick = function() {
-    button4.querySelector("svg").style.fill = 'black';
-    button3.querySelector("svg").style.fill = 'darkgray';
-    grid2.style.gridTemplateColumns = 'repeat(2,38%)';
-    grid2.style.justifyContent = 'center';
-    cardBlock.forEach(el => {
-      el.style.height = '935px';
-    });
-    imgBlock.forEach(el => {
-      el.style.maxHeight = '836px';
-    });
+    button4.onclick = function() {
+      button4.querySelector("svg").style.fill = 'black';
+      button3.querySelector("svg").style.fill = '#8593a2';
+      grid2.style.gridTemplateColumns = 'repeat(2,38%)';
+      grid2.style.justifyContent = 'center';
+      cardBlock.forEach(el => {
+        el.style.height = '935px';
+      });
+      imgBlock.forEach(el => {
+        el.style.maxHeight = '836px';
+      });
 
-    heart.forEach(el => {
-      el.style.transform = 'translateY(832px)';
-    });
+      heart.forEach(el => {
+        el.style.transform = 'translateY(832px)';
+      });
 
-    swiper.forEach((el, i) => {
+      swiper.forEach((el, i) => {
 
-      el.addEventListener("mouseenter", (e) => {
-        wrapper[i].style.transform = 'translate3d(-730px, 0px, 0px)'
-      })
-    });
+        el.addEventListener("mouseenter", (e) => {
+          wrapper[i].style.transform = 'translate3d(-730px, 0px, 0px)'
+        })
+      });
 
-    swiper.forEach((el, i) => {
-      el.addEventListener("mouseleave", (e) => {
-        wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
-    });
-  };
-  button3.onclick = function() {
-    button3.querySelector("svg").style.fill = 'black';
-    button4.querySelector("svg").style.fill = 'darkgray';
-    grid2.style.gridTemplateColumns = 'repeat(4,24.5%)';
-    grid2.style.justifyContent = 'normal';
-    cardBlock.forEach(el => {
-      el.style.height = '640px';
-    });
-    imgBlock.forEach(el => {
-      el.style.maxHeight = '560px';
-    });
+      swiper.forEach((el, i) => {
+        el.addEventListener("mouseleave", (e) => {
+          wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
+      });
+    };
+    button3.onclick = function() {
+      button3.querySelector("svg").style.fill = 'black';
+      button4.querySelector("svg").style.fill = '#8593a2';
+      grid2.style.gridTemplateColumns = 'repeat(4,24.5%)';
+      grid2.style.justifyContent = 'normal';
+      cardBlock.forEach(el => {
+        el.style.height = '640px';
+      });
+      imgBlock.forEach(el => {
+        el.style.maxHeight = '560px';
+      });
 
-    heart.forEach(el => {
-      el.style.transform = 'translateY(558px)';
-    });
+      heart.forEach(el => {
+        el.style.transform = 'translateY(558px)';
+      });
 
-    swiper.forEach((el, i) => {
+      swiper.forEach((el, i) => {
 
-      el.addEventListener("mouseenter", (e) => {
-        wrapper[i].style.transform = 'translate3d(-484px, 0px, 0px)'
-      })
-    });
+        el.addEventListener("mouseenter", (e) => {
+          wrapper[i].style.transform = 'translate3d(-484px, 0px, 0px)'
+        })
+      });
 
-    swiper.forEach((el, i) => {
-      el.addEventListener("mouseleave", (e) => {
-        wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
-    });
-  };
-} else {
-  button4.onclick = function() {
-    button4.querySelector("svg").style.fill = 'black';
-    button3.querySelector("svg").style.fill = 'darkgray';
-    grid2.style.gridTemplateColumns = 'repeat(2,38%)';
-    grid2.style.justifyContent = 'center';
-    cardBlock.forEach(el => {
-      el.style.height = '772px';
-    });
-    imgBlock.forEach(el => {
-      el.style.maxHeight = '836px';
-    });
+      swiper.forEach((el, i) => {
+        el.addEventListener("mouseleave", (e) => {
+          wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
+      });
+    };
+  } else {
+    button4.onclick = function() {
+      button4.querySelector("svg").style.fill = 'black';
+      button3.querySelector("svg").style.fill = '#8593a2;';
+      grid2.style.gridTemplateColumns = 'repeat(2,38%)';
+      grid2.style.justifyContent = 'center';
+      cardBlock.forEach(el => {
+        el.style.height = '772px';
+      });
+      imgBlock.forEach(el => {
+        el.style.maxHeight = '836px';
+      });
 
-    heart.forEach(el => {
-      el.style.transform = 'translateY(678px)';
-    });
+      heart.forEach(el => {
+        el.style.transform = 'translateY(678px)';
+      });
 
-    swiper.forEach((el, i) => {
+      swiper.forEach((el, i) => {
 
-      el.addEventListener("mouseenter", (e) => {
-        wrapper[i].style.transform = 'translate3d(-511px, 0px, 0px)'
-      })
-    });
+        el.addEventListener("mouseenter", (e) => {
+          wrapper[i].style.transform = 'translate3d(-511px, 0px, 0px)'
+        })
+      });
 
-    swiper.forEach((el, i) => {
-      el.addEventListener("mouseleave", (e) => {
-        wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
-    });
-  };
-  button3.onclick = function() {
-    button3.querySelector("svg").style.fill = 'black';
-    button4.querySelector("svg").style.fill = 'darkgray';
-    grid2.style.gridTemplateColumns = 'repeat(4,24.5%)';
-    grid2.style.justifyContent = 'normal';
-    cardBlock.forEach(el => {
-      el.style.height = '515px';
-    });
-    imgBlock.forEach(el => {
-      el.style.maxHeight = '560px';
-    });
+      swiper.forEach((el, i) => {
+        el.addEventListener("mouseleave", (e) => {
+          wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
+      });
+    };
+    button3.onclick = function() {
+      button3.querySelector("svg").style.fill = 'black';
+      button4.querySelector("svg").style.fill = '#8593a2';
+      grid2.style.gridTemplateColumns = 'repeat(4,24.5%)';
+      grid2.style.justifyContent = 'normal';
+      cardBlock.forEach(el => {
+        el.style.height = '515px';
+      });
+      imgBlock.forEach(el => {
+        el.style.maxHeight = '560px';
+      });
 
-    heart.forEach(el => {
-      el.style.transform = 'none';
-    });
+      heart.forEach(el => {
+        el.style.transform = 'none';
+      });
 
-    swiper.forEach((el, i) => {
+      swiper.forEach((el, i) => {
 
-      el.addEventListener("mouseenter", (e) => {
-        wrapper[i].style.transform = 'translate3d(-344px, 0px, 0px)'
-      })
-    });
+        el.addEventListener("mouseenter", (e) => {
+          wrapper[i].style.transform = 'translate3d(-344px, 0px, 0px)'
+        })
+      });
 
-    swiper.forEach((el, i) => {
-      el.addEventListener("mouseleave", (e) => {
-        wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
-    });
-  };
-}
+      swiper.forEach((el, i) => {
+        el.addEventListener("mouseleave", (e) => {
+          wrapper[i].style.transform = 'translate3d(0px, 0px, 0px)'      })
+      });
+    };
+  }
   button1.onclick = function() {
     button1.querySelector("svg").style.fill = 'black';
     button2.querySelector("label").style.background = 'url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxkZWZzPgogICAgICAgIDxzdHlsZT4KICAgICAgICAgICAgLmNscy0xLC5jbHMtM3tmaWxsOm5vbmV9LmNscy0xe3N0cm9rZTojNzg4MzkxO3N0cm9rZS13aWR0aDoycHh9LmNscy0ye3N0cm9rZTpub25lfQogICAgICAgIDwvc3R5bGU+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iaWNvbl92aWV3X3Jvd3MiIGRhdGEtbmFtZT0iaWNvbiB2aWV3IHJvd3MiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0uMDI5IC0uMDI5KSI+CiAgICAgICAgPGcgaWQ9IlJlY3RhbmdsZV8xODUiIGNsYXNzPSJjbHMtMSIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMTg1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDI5IC4wMjkpIj4KICAgICAgICAgICAgPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBjbGFzcz0iY2xzLTIiIHJ4PSIxIi8+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xIDFoMTh2MThIMXoiIGNsYXNzPSJjbHMtMyIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==) center center no-repeat';
@@ -206,31 +206,43 @@ const switcherButton = () => {
 
 const burgerSubmenu = () => {
   let menuElem = document.querySelectorAll('.main-list_submenu');
-  let titleElem = document.querySelectorAll('.main-list__link');
+  let titleElem = document.querySelectorAll('.main-list__item');
 
 
-    titleElem[0].onclick = function() {
-      menuElem[0].classList.toggle('open');
-    };
-    titleElem[1].onclick = function() {
-      menuElem[1].classList.toggle('open');
-    };
+  titleElem[0].onclick = function() {
+    titleElem[0].classList.toggle('item-open')
+    menuElem[0].classList.toggle('open');
+  };
+  titleElem[1].onclick = function() {
+    titleElem[1].classList.toggle('item-open')
+    menuElem[1].classList.toggle('open');
+  };
+  titleElem[3].onclick = function() {
+    titleElem[3].classList.toggle('item-open')
+    menuElem[2].classList.toggle('open');
+  };
+  titleElem[4].onclick = function() {
+    titleElem[4].classList.toggle('item-open')
+    menuElem[3].classList.toggle('open');
+  };
 
 };
 
 const searchOpen= () => {
-  let form = document.querySelector('.search-form');
+  let form = document.querySelectorAll('.search-form');
   let btn = document.querySelector('.right-block__btn--search');
   let close = document.querySelector('.search-form__reset');
 
-    btn.onclick = function(e) {
-      e.preventDefault();
-      form.classList.toggle('open');
-    };
-    close.onclick = function(e) {
-     e.preventDefault();
-      form.classList.remove('open');
-    };
+  btn.onclick = function(e) {
+    e.preventDefault();
+    form[0].classList.toggle('open');
+    form[1].classList.toggle('open');
+  };
+
+  close.onclick = function(e) {
+    e.preventDefault();
+    form.classList.remove('open');
+  };
 };
 
 const addressOpen = () => {
