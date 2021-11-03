@@ -5,14 +5,32 @@ const html = document.querySelector("html");
 const initFixedHeader = () => {
   const header = document.querySelector(".header");
   const menu = document.querySelector(".menu");
+  const body = document.querySelector("body");
   const headerHeight = header.offsetHeight;
 
-  if (window.pageYOffset > headerHeight) {
+  if (window.screen.availWidth > 1365) {
+    if (window.pageYOffset > headerHeight) {
+      header.classList.add("fixed");
+      menu.classList.add("fixed");
+      body.style.paddingTop = '200px';
+
+    } else {
+      header.classList.remove("fixed");
+      menu.classList.remove("fixed");
+      body.style.paddingTop = '0';
+    }
+  }
+  else {
+    if (window.pageYOffset > headerHeight) {
     header.classList.add("fixed");
     menu.classList.add("fixed");
+
+
   } else {
     header.classList.remove("fixed");
     menu.classList.remove("fixed");
+
+  }
   }
 };
 
@@ -28,7 +46,7 @@ const switcherButton = () => {
   const button3 = document.querySelector("#Grid3");
   const button4 = document.querySelector("#Grid4");
 
-
+  const grid2 = document.querySelector(".products-list");
   const img = document.querySelectorAll(".swiper-slide > img");
   const imgBlock = document.querySelectorAll(".swiper-slide");
   const cardBlock = document.querySelectorAll(".product-card");
@@ -48,7 +66,7 @@ const switcherButton = () => {
       el.classList.add('full-grid')
     });
   };
-  if (width > 1440) {
+  if (width > 1365) {
   button4.onclick = function() {
     button4.querySelector("svg").style.fill = 'black';
     button3.querySelector("svg").style.fill = 'darkgray';
@@ -222,7 +240,7 @@ const swiperPrew1 = () => {
   const wrapper = document.querySelectorAll('.swiper-wrapper');
   const width = window.screen.availWidth;
 
-  if (width > 1440) {
+  if (width > 1365) {
 
     swiper.forEach((el, i) => {
       el.addEventListener("mouseenter", (e) => {

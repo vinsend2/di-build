@@ -1,32 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="617px" height="617px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 617 617"
->
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil1 {fill:#FEFEFE}
-    .fil0 {fill:#2B2A29}
-   ]]>
-    @media (prefers-color-scheme: dark) {
-      path {
-        fill: #fff;
-      }
-    }
-  </style>
- </defs>
- <g id="Слой_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_2114474054336">
-   <rect class="fil0" x="-0.47" y="0.47" width="617" height="617" rx="99.01" ry="99.01"/>
-   <circle class="fil1" cx="110.38" cy="121.14" r="81.28"/>
-   <circle class="fil1" cx="307.84" cy="121.14" r="81.28"/>
-   <circle class="fil1" cx="504.39" cy="121.14" r="81.28"/>
-   <circle class="fil1" cx="110.38" cy="308.19" r="81.28"/>
-   <circle class="fil1" cx="307.84" cy="308.19" r="81.28"/>
-   <circle class="fil1" cx="504.39" cy="308.19" r="81.28"/>
-   <circle class="fil1" cx="110.38" cy="493.02" r="81.28"/>
-   <circle class="fil1" cx="307.84" cy="493.02" r="81.28"/>
-   <circle class="fil1" cx="504.39" cy="493.02" r="81.28"/>
-  </g>
- </g>
-</svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="617px" height="617px" viewBox="0 0 617 617">
+       <defs>
+        <style>
+            .fil1 {
+              fill:#FEFEFE;
+              fill-rule: evenodd;
+            }
+            .fil0 {
+              fill:#2B2A29;
+              fill-rule: evenodd;
+            }
+
+          @media (prefers-color-scheme: dark) {
+           .fil1 {
+              fill:#2B2A29;
+              fill-rule: evenodd;
+            }
+            .fil0 {
+              fill:#FEFEFE;
+              fill-rule: evenodd;
+            }
+          }
+        </style>
+       </defs>
+       <g id="x0020_1">
+        <g id="14474054336">
+         <rect class="fil0" x="-0.47" y="0.47" width="617" height="617" rx="99.01" ry="99.01"/>
+         <circle class="fil1" cx="110.38" cy="121.14" r="81.28"/>
+         <circle class="fil1" cx="307.84" cy="121.14" r="81.28"/>
+         <circle class="fil1" cx="504.39" cy="121.14" r="81.28"/>
+         <circle class="fil1" cx="110.38" cy="308.19" r="81.28"/>
+         <circle class="fil1" cx="307.84" cy="308.19" r="81.28"/>
+         <circle class="fil1" cx="504.39" cy="308.19" r="81.28"/>
+         <circle class="fil1" cx="110.38" cy="493.02" r="81.28"/>
+         <circle class="fil1" cx="307.84" cy="493.02" r="81.28"/>
+         <circle class="fil1" cx="504.39" cy="493.02" r="81.28"/>
+        </g>
+       </g>
+      </svg>
