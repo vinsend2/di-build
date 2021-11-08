@@ -11,6 +11,21 @@ ScrollReveal().reveal(".wwd-card", {
 
 "use strict";
 
+const $ = (x, parent = document) => {
+  return parent.querySelector(x);
+}
+
+const catalogToogle = () => {
+ $('.filter__item--catalog .main-list__link').addEventListener("click", () => {
+  $('.catalog-menu .menu__box').classList.remove('menu__box--hide')
+  $('.catalog-menu .menu__box').classList.add('menu__box--open')
+  });
+  $('.close-btn').addEventListener("click", () => {
+    $('.catalog-menu .menu__box').classList.remove('menu__box--open')
+    $('.catalog-menu .menu__box').classList.add('menu__box--hide')
+    });
+}
+
 const html = document.querySelector("html");
 
 const initFixedHeader = () => {
@@ -247,12 +262,10 @@ const searchOpen= () => {
 
 const addressOpen = () => {
   const address = document.querySelectorAll('.second-list__link--address');
-  console.log(address)
 
   address.forEach((el) => {
     el.addEventListener("click", (e) => {
       el.preventDefault();
-      console.log(123);
     })
   });
 
@@ -343,7 +356,7 @@ document.addEventListener(
     swiperPrew1();
     searchOpen();
     addressOpen();
-
+    catalogToogle();
   },
   false
 );
