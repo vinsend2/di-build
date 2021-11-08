@@ -91,9 +91,92 @@
   font-size: 14px;
   border-bottom: 1px solid $mainColor2;
 }
+.product__stores span {
+  border-bottom: none;
+}
+.product__stores_list .store span{
+  color: $mainColor1;
+}
+.product__stores_list .value {
+  margin-left: 30px;
+}
 
 .product__stores_list span {
   color: $mainColor1;
   font-size: 16px;
 }
+.product-card__delivery-block {
+  margin-top: 15px;
+  border-bottom: 1px solid $mainColor3;
+  padding-bottom: 20px;
+}
+.product__delivery {
+  margin-top: 15px;
+}
+.product__stores {
+  margin-top: 20px;
+}
+.product-card__price_old {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: $mainColor2;
+  margin-top: 15px;
+}
+.product-card__price {
+  font-size: 24px;
+  margin-top: 5px;
+}
+.product__order {
+  margin-top: 25px;
+  position: relative;
+}
+.product-card .product-card__btn {
+  background: black;
+  color: white;
+  padding: 20px 80px 20px 30px;
+}
+.product__order .product-card__favorite {
+    top: auto;
+    bottom: 14px;
+  right: 45px;
+    & svg {
+    }
+  }
+.product-card__description {
+  margin-top: 20px;
 
+  & h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $mainColor1;
+    font-weight: 300;
+  }
+  & .desc-text {
+    font-size: 14px;
+  }
+}
+.details .btn--more {
+  width: 100%;
+  padding: 8px 0;
+  margin-top: 80px;
+}
+
+
+.mySwiper2 {
+  display: block;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1366px)  {
+  .mySwiper2 .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+  }
+  .mySwiper2 .swiper-wrapper .swiper-slide-1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}

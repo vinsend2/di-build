@@ -6,7 +6,6 @@ const $ = (x, parent = document) => {
 
 const catalogToogle = () => {
  document.querySelector('.filter__item--catalog .main-list__link').parentNode.addEventListener("click", () => {
-   console.log(123);
   $('.catalog-menu .menu__box').classList.remove('menu__box--hide')
   $('.catalog-menu .menu__box').classList.add('menu__box--open')
   });

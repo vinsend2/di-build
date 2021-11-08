@@ -17,7 +17,6 @@ const $ = (x, parent = document) => {
 
 const catalogToogle = () => {
  document.querySelector('.filter__item--catalog .main-list__link').parentNode.addEventListener("click", () => {
-   console.log(123);
   $('.catalog-menu .menu__box').classList.remove('menu__box--hide')
   $('.catalog-menu .menu__box').classList.add('menu__box--open')
   });
@@ -362,6 +361,7 @@ document.addEventListener(
   false
 );
 
+
 const postForm = async (url, data) => {
   const res = await fetch(url, {
       method: `POST`,
@@ -405,10 +405,31 @@ const slider = ()=>{
       navigation: {
         nextEl: nextArrow[index],
         prevEl: prevArrow[index],
-      },
+      }
     });
   })
+  if (window.screen.availWidth < 1365) {
+    let slider = document.querySelector('.mySwiper2')
+    let prevArrow = document.querySelector('.swiper-button-prev')
+    let nextArrow = document.querySelector('.swiper-button-next')
+
+    const swiper = new Swiper(slider, {
+      enabled: true,
+      slidesPerView: 1,
+      spaceBetween: 40,
+      navigation: {
+        nextEl: nextArrow,
+        prevEl: prevArrow,
+      }
+    });
+  }
 }
-window.addEventListener('load', slider)
+
+
+
+window.addEventListener('load', slider);
+
+
+
 
 
