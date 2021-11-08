@@ -1,3 +1,99 @@
+.detail-block .product-card__title {
+  border-bottom: 1px solid $mainColor3;
+  padding-bottom: 5px;
+  b {
+    font-size: 36px;
+    font-weight: normal;
+  }
+  }
+.detail-block .product-card__desc {
+    margin-left: 15px;
+    line-height: normal;
+    margin-right: 15px;
+  }
 .detail-block .product-card__header {
-  position: relative;
+    position: relative;
+ }
+.detail-block .quick-order {
+  display: none;
 }
+.product-card__property {
+  margin-top: 15px;
+  border-bottom: 1px solid $mainColor3;
+}
+.product-card__property ul li p, .product-card__size span {
+  color: $mainColor2;
+  font-size: 14px;
+}
+.product-card__property li {
+  margin-bottom: 10px;
+}
+.product-card__property .color {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  & p {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  & span {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  & b {
+    font-weight: normal;
+    grid-area: 2 / 1 / 3 / 2;
+    margin-left: 25px;
+    padding-bottom: 2px;
+  }
+}
+
+.product-color {
+  position: relative;
+  background-position: center;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.product-card__nav-item.is-active {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 50%;
+}
+.product-card .size-list {
+  display: flex;
+  & li {
+    margin-right: 15px;
+    padding: 2px 8px 2px 2px;
+  }
+}
+.product-card .size-list .active {
+  background: black;
+  & a {
+    color: white;
+  }
+}
+.product-card .size-list .not-available {
+  & a {
+    color: $mainColor3;
+  }
+}
+.details .nav-color {
+  display: flex;
+}
+.nav-color .product-card__nav-item {
+  margin: 0px 0px 0 10px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.product-card__size_table a, .product__stores span, .product__delivery a, .size_table_how {
+  color: $mainColor2;
+  font-size: 14px;
+  border-bottom: 1px solid $mainColor2;
+}
+
+.product__stores_list span {
+  color: $mainColor1;
+  font-size: 16px;
+}
+
