@@ -6,8 +6,29 @@
   align-items: center;
   padding: 15px 48px;
   text-align: center;
+  & svg {
+    transform: translateZ(0);
+    display: inline-table;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
   &:hover, :active  {
-    transform: scale(1.02);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    & span {
+      transform: translateZ(0);
+      display: inline-table;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+    & svg {
+      transform: translateZ(0);
+      display: inline-table;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+
   }
 }
 .btn__text--filter {

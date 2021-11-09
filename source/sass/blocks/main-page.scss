@@ -17,6 +17,10 @@
     margin: 0 auto;
     display: block;
     padding: 8px 40px;
+  &:hover {
+    background: black;
+    color: white;
+  }
 }
 .main-banner {
   background-image: url(../img/main/main-banner.jpg);

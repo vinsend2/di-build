@@ -112,7 +112,9 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-
+.link_style_button {
+  opacity: 1;
+}
 .text-content {
   p, ul, ol, table, img {
      &:not(:last-child) {

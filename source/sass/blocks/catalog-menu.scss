@@ -53,7 +53,7 @@
     color: $mainColor1;
   }
   &:before {
-    right: 192px;
+    right: 98%;
     top: 13%;
   }
 }
@@ -98,3 +98,13 @@
   .close-btn:after {
   transform: rotate(-45deg);
   }
+.catalog-menu .fixed {
+  position: fixed;
+  top: 155px;
+  z-index: 10;
+}
+@media screen and (min-width: 1280px) and (max-width:  1832px) {
+  .catalog-menu .menu__box {
+    width: 23%;
+  }
+}
