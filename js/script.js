@@ -16,22 +16,49 @@ const $ = (x, parent = document) => {
 }
 
 const catalogToogle = () => {
- $('.filter__item--catalog .main-list__link').addEventListener("click", () => {
-  $('.catalog-menu .menu__box').classList.remove('menu__box--hide')
-  $('.catalog-menu .menu__box').classList.add('menu__box--open')
+  if (document.querySelector(".catalog-menu .menu__box") === null) {
+    return false;
+  }
+ document.querySelector('.filter__item--catalog .main-list__link').parentNode.addEventListener("click", () => {
+  $('.catalog-menu .menu__box').classList.toggle('menu__box--open')
   });
   $('.close-btn').addEventListener("click", () => {
-    $('.catalog-menu .menu__box').classList.remove('menu__box--open')
-    $('.catalog-menu .menu__box').classList.add('menu__box--hide')
+    $('.catalog-menu .menu__box').classList.toggle('menu__box--open')
     });
+  document.querySelector('#catalog-btn').addEventListener("click", () => {
+    $('.catalog-menu .menu__box').classList.toggle('menu__box--open')
+  });
 }
 
 const html = document.querySelector("html");
+
+const popupInit = () => {
+  const sliders = document.querySelectorAll(".details .mySwiper2 .swiper-slide img");
+    function Resize () {
+      if (window.screen.availWidth > 1365) {
+        sliders.forEach(el => {
+          el.setAttribute ('data-fancybox', 'gallery')
+        });
+      }
+    else {
+      sliders.forEach(el => {
+        el.removeAttribute ('data-fancybox', 'gallery')
+      });
+    }
+  }
+  Resize();
+  window.addEventListener(`resize`, e => {
+        Resize();
+  });
+  };
+
+
 
 const initFixedHeader = () => {
   const header = document.querySelector(".header");
   const menu = document.querySelector(".menu");
   const body = document.querySelector("body");
+  const catalog = document.querySelector(".catalog-menu .menu__box");
   const headerHeight = header.offsetHeight;
 
   if (window.screen.availWidth > 1365) {
@@ -39,11 +66,13 @@ const initFixedHeader = () => {
       header.classList.add("fixed");
       menu.classList.add("fixed");
       body.style.paddingTop = '200px';
+      catalog.classList.add("fixed");
 
     } else {
       header.classList.remove("fixed");
       menu.classList.remove("fixed");
       body.style.paddingTop = '0';
+      catalog.classList.remove("fixed");
     }
   }
   else {
@@ -63,7 +92,7 @@ const initFixedHeader = () => {
 
 const switcherButton = () => {
 
-  if (document.querySelector("#Grid1") === null) {
+  if (document.querySelector("#Grid3") === null) {
     return false;
   }
 
@@ -92,7 +121,7 @@ const switcherButton = () => {
       el.classList.add('full-grid')
     });
   };
-  if (width > 1365) {
+  if (width > 1440) {
     button4.onclick = function() {
       button4.querySelector("svg").style.fill = 'black';
       button3.querySelector("svg").style.fill = '#8593a2';
@@ -150,6 +179,7 @@ const switcherButton = () => {
       });
     };
   } else {
+
     button4.onclick = function() {
       button4.querySelector("svg").style.fill = 'black';
       button3.querySelector("svg").style.fill = '#8593a2;';
@@ -163,7 +193,7 @@ const switcherButton = () => {
       });
 
       heart.forEach(el => {
-        el.style.transform = 'translateY(678px)';
+        el.style.transform = 'translateY(0)';
       });
 
       swiper.forEach((el, i) => {
@@ -276,7 +306,7 @@ const swiperPrew1 = () => {
   const wrapper = document.querySelectorAll('.swiper-wrapper');
   const width = window.screen.availWidth;
 
-  if (width > 1365) {
+  if (width > 1440) {
 
     swiper.forEach((el, i) => {
       el.addEventListener("mouseenter", (e) => {
@@ -357,9 +387,11 @@ document.addEventListener(
     searchOpen();
     addressOpen();
     catalogToogle();
+    popupInit();
   },
   false
 );
+
 
 const postForm = async (url, data) => {
   const res = await fetch(url, {
@@ -404,10 +436,31 @@ const slider = ()=>{
       navigation: {
         nextEl: nextArrow[index],
         prevEl: prevArrow[index],
-      },
+      }
     });
   })
+  if (window.screen.availWidth < 1365) {
+    let slider = document.querySelector('.mySwiper2')
+    let prevArrow = document.querySelector('.swiper-button-prev')
+    let nextArrow = document.querySelector('.swiper-button-next')
+
+    const swiper = new Swiper(slider, {
+      enabled: true,
+      slidesPerView: 1,
+      spaceBetween: 40,
+      navigation: {
+        nextEl: nextArrow,
+        prevEl: prevArrow,
+      }
+    });
+  }
 }
-window.addEventListener('load', slider)
+
+
+
+window.addEventListener('load', slider);
+
+
+
 
 
