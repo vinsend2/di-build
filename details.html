@@ -1356,7 +1356,18 @@
 
   </footer>
 
+<script>
+  if (!Object.entries)
+    Object.entries = function( obj ){
+      var ownProps = Object.keys( obj ),
+        i = ownProps.length,
+        resArray = new Array(i); // preallocate the Array
 
+      while (i--)
+        resArray[i] = [ownProps[i], obj[ownProps[i]]];
+      return resArray;
+    };
+</script>
   <script src="https://unpkg.com/scrollreveal@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="js/script.min.js"></script>
