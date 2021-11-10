@@ -16,6 +16,9 @@ const slider = ()=>{
       }
     });
   })
+
+
+
   if (window.screen.availWidth < 1365) {
     let slider = document.querySelector('.mySwiper2')
     let prevArrow = document.querySelector('.swiper-button-prev')

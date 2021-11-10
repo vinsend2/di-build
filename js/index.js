@@ -55,29 +55,41 @@ const initFixedHeader = () => {
       header.classList.add("fixed");
       menu.classList.add("fixed");
       body.style.paddingTop = '200px';
-      catalog.classList.add("fixed");
 
     } else {
       header.classList.remove("fixed");
       menu.classList.remove("fixed");
       body.style.paddingTop = '0';
-      catalog.classList.remove("fixed");
     }
   }
   else {
     if (window.pageYOffset > headerHeight) {
       header.classList.add("fixed");
       menu.classList.add("fixed");
-
-
     } else {
       header.classList.remove("fixed");
       menu.classList.remove("fixed");
-
     }
   }
 };
 
+const initFixedMenu = () => {
+
+  if (document.querySelector(".catalog-menu .menu__box") === null) {
+    return false;
+  }
+  const header = document.querySelector(".header");
+  const catalog = document.querySelector(".catalog-menu .menu__box");
+  const body = document.querySelector("body");
+  const headerHeight = header.offsetHeight;
+
+  if (window.screen.availWidth > 1365) {
+    catalog.classList.add("fixed");
+  }
+  else {
+    catalog.classList.remove("fixed");
+  }
+}
 
 const switcherButton = () => {
 
@@ -361,7 +373,6 @@ const overlayClose = () => {
 };
 
 
-
 window.addEventListener("scroll", () => {
   initFixedHeader();
 });
@@ -377,6 +388,7 @@ document.addEventListener(
     addressOpen();
     catalogToogle();
     popupInit();
+    initFixedMenu();
   },
   false
 );
