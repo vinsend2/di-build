@@ -1,3 +1,6 @@
+import Swiper from 'swiper';
+// import Swiper styles
+
 
 const slider = ()=>{
   let largeSliders = document.querySelectorAll('.mySwiper')

@@ -1,5 +1,6 @@
 "use strict";
 
+
 const $ = (x, parent = document) => {
   return parent.querySelector(x);
 }
@@ -8,12 +9,12 @@ const catalogToogle = () => {
   if (document.querySelector(".catalog-menu .menu__box") === null) {
     return false;
   }
- document.querySelector('.filter__item--catalog .main-list__link').parentNode.addEventListener("click", () => {
-  $('.catalog-menu .menu__box').classList.toggle('menu__box--open')
+  document.querySelector('.filter__item--catalog .main-list__link').parentNode.addEventListener("click", () => {
+    $('.catalog-menu .menu__box').classList.toggle('menu__box--open')
   });
   $('.close-btn').addEventListener("click", () => {
     $('.catalog-menu .menu__box').classList.toggle('menu__box--open')
-    });
+  });
   document.querySelector('#catalog-btn').addEventListener("click", () => {
     $('.catalog-menu .menu__box').classList.toggle('menu__box--open')
   });
@@ -23,12 +24,12 @@ const html = document.querySelector("html");
 
 const popupInit = () => {
   const sliders = document.querySelectorAll(".details .mySwiper2 .swiper-slide img");
-    function Resize () {
-      if (window.screen.availWidth > 1365) {
-        sliders.forEach(el => {
-          el.setAttribute ('data-fancybox', 'gallery')
-        });
-      }
+  function Resize () {
+    if (window.screen.availWidth > 1365) {
+      sliders.forEach(el => {
+        el.setAttribute ('data-fancybox', 'gallery')
+      });
+    }
     else {
       sliders.forEach(el => {
         el.removeAttribute ('data-fancybox', 'gallery')
@@ -37,9 +38,9 @@ const popupInit = () => {
   }
   Resize();
   window.addEventListener(`resize`, e => {
-        Resize();
+    Resize();
   });
-  };
+};
 
 
 
@@ -60,6 +61,7 @@ const initFixedHeader = () => {
       header.classList.remove("fixed");
       menu.classList.remove("fixed");
       body.style.paddingTop = '0';
+
     }
   }
   else {
@@ -83,7 +85,7 @@ const initFixedMenu = () => {
   const body = document.querySelector("body");
   const headerHeight = header.offsetHeight;
 
-  if (window.screen.availWidth > 1365) {
+  if (window.pageYOffset > headerHeight) {
     catalog.classList.add("fixed");
   }
   else {
@@ -304,7 +306,7 @@ const addressOpen = () => {
 
 const swiperPrew1 = () => {
   const swiper = document.querySelectorAll('.mySwiper');
-  const wrapper = document.querySelectorAll('.swiper-wrapper');
+  const wrapper = document.querySelectorAll('.mySwiper .swiper-wrapper');
   const width = window.screen.availWidth;
 
   if (width > 1440) {
@@ -375,6 +377,7 @@ const overlayClose = () => {
 
 window.addEventListener("scroll", () => {
   initFixedHeader();
+  initFixedMenu();
 });
 
 document.addEventListener(
