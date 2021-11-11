@@ -297,7 +297,7 @@ const burgerSubmenu = () => {
 const searchOpen= () => {
   let form = document.querySelectorAll('.search-form');
   let btn = document.querySelector('.right-block__btn--search');
-  let close = document.querySelector('.search-form__reset');
+  let close = document.querySelectorAll('.search-form__reset');
 
   btn.onclick = function(e) {
     e.preventDefault();
@@ -305,10 +305,13 @@ const searchOpen= () => {
     form[1].classList.toggle('open');
   };
 
-  close.onclick = function(e) {
-    e.preventDefault();
-    form.classList.remove('open');
-  };
+  close.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      form[0].classList.toggle('open');
+      form[1].classList.toggle('open');
+    })
+  });
 };
 
 const addressOpen = () => {

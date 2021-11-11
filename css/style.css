@@ -1687,7 +1687,7 @@ a {
     margin-left: 25px;
     padding-bottom: 2px; }
 
-.details .product-color {
+.details .nav-color__block .product-color {
   position: relative;
   background-position: center;
   display: block;
@@ -1696,7 +1696,7 @@ a {
   border-radius: 50%;
   -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1); }
-  .details .product-color:hover {
+  .details .nav-color__block .product-color:hover {
     border: 1px solid gray; }
 
 .details .product-card__nav-item.is-active {
@@ -1871,6 +1871,12 @@ details .product-card__price {
 
 .nav-color__block {
   margin-left: 1rem; }
+
+.is-active .product-color {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%; }
 
 @media screen and (min-width: 1366px) {
   .footer .float__fixed {
@@ -2930,10 +2936,13 @@ details .product-card__price {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .header {
     padding: 10px 0; }
+  .header.fixed {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .logo {
     margin-left: -10vmax; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 359px) {
   .header__inner {
     -webkit-box-pack: normal;
         -ms-flex-pack: normal;
@@ -3254,7 +3263,8 @@ details .product-card__price {
   visibility: visible;
   top: 60px;
   z-index: 15;
-  margin-left: -15px; }
+  margin-left: -15px;
+  margin-top: 2px; }
 
 .menu__item svg {
   transition: transform .25s,-webkit-transform .25s;
@@ -3310,7 +3320,7 @@ details .product-card__price {
   position: fixed;
   visibility: hidden;
   top: -100%;
-  width: 100%;
+  width: 102%;
   height: 100%;
   margin: 0;
   list-style: none;
@@ -3430,7 +3440,8 @@ details .product-card__price {
   .menu.fixed > .menu__btn {
     top: 2rem; }
   .header__burger-menu .menu__box {
-    width: 770px; } }
+    width: 77rem;
+    margin-top: 2px; } }
 
 @media screen and (max-width: 360px) {
   top: 4vh;
@@ -3528,7 +3539,7 @@ details .product-card__price {
     padding-top: 18px;
     padding-bottom: 18px; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 359px) {
   body {
     font-size: 1.6rem; }
   a {
@@ -3552,3 +3563,10 @@ details .product-card__price {
 @media screen and (min-width: 380px) and (max-width: 760px) {
   .wrapper1800 {
     max-width: 385px; } }
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .wrapper1800 {
+    max-width: 360px; }
+  .header .wrapper1800 {
+    padding-left: 10px;
+    padding-right: 10px; } }
