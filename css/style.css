@@ -3426,9 +3426,9 @@ details .product-card__price {
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .menu__btn {
-    top: 2vh; }
+    top: 3rem; }
   .menu.fixed > .menu__btn {
-    top: 2vh; }
+    top: 2rem; }
   .header__burger-menu .menu__box {
     width: 770px; } }
 
