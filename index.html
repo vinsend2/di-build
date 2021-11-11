@@ -8,7 +8,34 @@
   <title>Джайв - интернет-магазин обуви в Челябинске</title>
   <meta name="description" content="Djaiv">
   <meta name="keyword" content="Djaiv">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+    { @media {
+      .header{
+        position: fixed !important;
+      }
+      .header.fixed {
+        position: fixed !important;
+      }
+      .header .right-block__counter--basket {
+        right: 33%;
+      }
+      .full-grid .product-card__overlay {
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      .footer-menu__menu-bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+      .social-list {
+        justify-content: space-between;
+        width: 70%;
+      }
+    }
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
