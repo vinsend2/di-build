@@ -294,6 +294,31 @@ const burgerSubmenu = () => {
 
 };
 
+const  favoriteClick = () => {
+  let heart = document.querySelectorAll('.product-card .product-card__favorite');
+  console.log(heart);
+  heart.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      el.classList.toggle('marked');
+    })
+  });
+}
+
+const  addToCart = () => {
+  const addBtn = document.querySelectorAll('.product-card__btn--basket');
+
+  addBtn.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      console.log(123);
+      addBtn[0].innerText = 'Удалить из корзины';
+      addBtn[1].innerText = 'Удалить из корзины';
+    })
+  });
+
+
+}
+
 const searchOpen= () => {
   let form = document.querySelectorAll('.search-form');
   let btn = document.querySelector('.right-block__btn--search');
@@ -413,6 +438,8 @@ document.addEventListener(
     catalogToogle();
     popupInit();
     initFixedMenu();
+    favoriteClick();
+    addToCart();
   },
   false
 );
