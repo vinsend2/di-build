@@ -1229,7 +1229,7 @@ a {
   top: 2rem;
   position: absolute;
   right: 1rem;
-  z-index: 5; }
+  z-index: 3; }
   .product-card__favorite path {
     fill: gray; }
 
@@ -1872,7 +1872,7 @@ details .product-card__price {
 .nav-color__block {
   margin-left: 1rem; }
 
-.is-active .product-color {
+.details .is-active .product-color {
   width: 10px;
   height: 10px;
   display: block;
