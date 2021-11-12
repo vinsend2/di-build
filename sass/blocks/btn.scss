@@ -1,0 +1,50 @@
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 48px;
+  text-align: center;
+  & svg {
+    transform: translateZ(0);
+
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  &:hover, :active  {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    & span {
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+    & svg {
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+  }
+}
+.btn__text--filter {
+  position: relative;
+  &::before {
+    content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: -30px;
+      width: 24px;
+      height: 24px;
+      background: url(../img/icons/filter-icon.png) center no-repeat;
+  }
+}
+.btn--more  {
+  color: $mainColor2;
+  border: 1px solid $mainColor3;
+}
+
