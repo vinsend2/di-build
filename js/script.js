@@ -319,6 +319,26 @@ const  addToCart = () => {
 
 }
 
+const addressClose = () => {
+  const address = document.querySelectorAll('.second-list__link--address');
+  const submenu = document.querySelectorAll('.second-menu__submenu')
+  const svg = document.querySelector('.second-list__item--address svg')
+  console.log(svg);
+  address.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      submenu[0].classList.toggle('open');
+      submenu[1].classList.toggle('open');
+      svg.classList.toggle('rotate');
+    })  })
+  submenu.forEach((el) => {
+    el.addEventListener("mouseleave", (e) => {
+      submenu[0].classList.toggle('open');
+      submenu[1].classList.toggle('open');
+      svg.classList.toggle('rotate');
+    })  })
+
+}
+
 const searchOpen= () => {
   let form = document.querySelectorAll('.search-form');
   let btn = document.querySelector('.right-block__btn--search');
@@ -339,16 +359,7 @@ const searchOpen= () => {
   });
 };
 
-const addressOpen = () => {
-  const address = document.querySelectorAll('.second-list__link--address');
 
-  address.forEach((el) => {
-    el.addEventListener("click", (e) => {
-      el.preventDefault();
-    })
-  });
-
-}
 
 const swiperPrew1 = () => {
   const swiper = document.querySelectorAll('.mySwiper');
@@ -434,12 +445,12 @@ document.addEventListener(
     burgerSubmenu();
     swiperPrew1();
     searchOpen();
-    addressOpen();
     catalogToogle();
     popupInit();
     initFixedMenu();
     favoriteClick();
     addToCart();
+    addressClose();
   },
   false
 );
